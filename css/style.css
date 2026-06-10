@@ -1,0 +1,426 @@
+:root {
+  --color-bg: #f5f0e6;
+  --color-bg-alt: #ece4d3;
+  --color-surface: #ffffff;
+  --color-text: #2e2a22;
+  --color-text-muted: #6f6657;
+  --color-primary: #4a6f44;
+  --color-primary-dark: #2f4a2b;
+  --color-accent: #8b5e34;
+  --color-border: #ddd2bb;
+
+  --rarity-common: #8a8a8a;
+  --rarity-rare: #3b7fc4;
+  --rarity-epic: #9b51c9;
+  --rarity-legendary: #d9a13b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* ---------- Header / Navigation ---------- */
+
+.site-header {
+  background: var(--color-primary-dark);
+  color: #f5f0e6;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.main-nav a {
+  color: #e6e2d6;
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.main-nav a.active {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.main-nav a.wip::after {
+  content: " 🚧";
+  font-size: 0.75em;
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+main > h1:first-child {
+  margin-top: 0;
+}
+
+.intro {
+  color: var(--color-text-muted);
+  max-width: 70ch;
+}
+
+.section {
+  margin: 2.5rem 0;
+}
+
+.section h2 {
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.3rem;
+}
+
+.site-footer {
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.site-footer code {
+  background: var(--color-surface);
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+}
+
+/* ---------- Category grid (Startseite) ---------- */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-card .icon {
+  font-size: 2rem;
+}
+
+.category-card h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+}
+
+.category-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+.category-card.wip {
+  border-style: dashed;
+  opacity: 0.7;
+}
+
+.category-card .status {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* ---------- Tables ---------- */
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  font-size: 0.92rem;
+}
+
+.data-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-bg-alt);
+  color: var(--color-primary-dark);
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table thead th {
+  background: var(--color-primary);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background: var(--color-bg-alt);
+}
+
+.data-table tbody tr:hover {
+  background: #efe6d2;
+}
+
+.tech-name {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.perk-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.perk-list li {
+  margin-bottom: 0.3rem;
+}
+
+.perk-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Search / filter ---------- */
+
+.table-search {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.45rem 0.7rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.table-search:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+/* ---------- Badges ---------- */
+
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.badge-common {
+  background: var(--rarity-common);
+}
+
+.badge-rare {
+  background: var(--rarity-rare);
+}
+
+.badge-epic {
+  background: var(--rarity-epic);
+}
+
+.badge-legendary {
+  background: var(--rarity-legendary);
+}
+
+.badge-unique {
+  background: var(--color-accent);
+}
+
+/* ---------- Callouts ---------- */
+
+.callout {
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 6px 6px 0;
+  padding: 0.6rem 0.9rem;
+  margin: 0.6rem 0;
+  font-size: 0.9rem;
+}
+
+.callout-warning {
+  border-left-color: var(--rarity-legendary);
+  background: #fdf6e8;
+}
+
+.callout strong {
+  color: var(--color-primary-dark);
+}
+
+.callout-warning strong {
+  color: #8a6212;
+}
+
+.artifact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+/* ---------- Character / Artifact cards ---------- */
+
+.char-block,
+.skill-block,
+.artifact-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.char-block h2,
+.skill-block h2 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.artifact-card h3 {
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.artifact-card ul {
+  margin: 0.4rem 0;
+  padding-left: 1.3rem;
+}
+
+/* ---------- Placeholder pages ---------- */
+
+.placeholder {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--color-text-muted);
+}
+
+.placeholder .icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Game-Element-Icons ---------- */
+
+.icon-img {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: var(--color-bg-alt);
+  border-radius: 6px;
+}
+
+.icon-sm {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-md {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-portrait {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+}
+
+.icon-unique {
+  box-shadow: 0 0 0 2px var(--rarity-legendary);
+}
+
+.perk-list .icon-img {
+  margin-right: 0.4rem;
+}

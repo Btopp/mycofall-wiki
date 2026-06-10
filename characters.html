@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Characters &amp; Perksets – Survivor Wiki</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="characters">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-title">🍄 Survivor – Wiki</a>
+      <nav class="main-nav">
+        <a href="story.html" data-page="story" class="wip">Story</a>
+        <a href="characters.html" data-page="characters">Characters &amp; Perksets</a>
+        <a href="perks.html" data-page="perks">Ingame Perks</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="artifacts.html" data-page="artifacts">Artifacts</a>
+        <a href="enemies.html" data-page="enemies" class="wip">Enemies</a>
+        <a href="maps.html" data-page="maps" class="wip">Maps</a>
+        <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Characters &amp; Perksets</h1>
+    <p class="intro">
+      Jeder Charakter besitzt 5 alternative <strong>Perksets</strong>. Jedes Set wird ab einem
+      bestimmten Charakter-Level gegen Bezahlung freigeschaltet und enthält Basis-Perks,
+      Level-Up-Perks und optional einen einzigartigen Trait.
+    </p>
+
+    <div class="callout">
+      <strong>Wichtig – wie Perksets im Run wirken:</strong> Pro Run ist nur
+      <strong>EIN</strong> Perkset aktiv (Auswahl vor Run-Start).
+      <ul>
+        <li>Die <em>Basis-Perks</em> und der <em>Trait</em> des gewählten Sets gelten
+          <strong>einmalig</strong> bei Run-Start.</li>
+        <li>Die <em>Level-Up-Perks</em> des gewählten Sets werden dagegen bei
+          <strong>jedem Level-Up</strong> automatisch zusätzlich zur normalen Perk-Auswahl
+          angewendet.</li>
+      </ul>
+      Ein Perkset ist also eher eine <strong>Build-Entscheidung</strong> als eine lineare
+      Progression – die anderen 4 Sets bleiben für den Run inaktiv.
+    </div>
+
+    <!-- ============ Wortak ============ -->
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/characters/wortak.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Wortak</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Set</th>
+              <th>Freischaltung</th>
+              <th>Basis-Perks (einmalig)</th>
+              <th>Level-Up-Perks (pro Level-Up)</th>
+              <th>Trait</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ab Charakter-Level 1 · Kosten 0</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+30</strong> <span class="tech-name">(MaxHP)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+2</strong> <span class="tech-name">(MaxHP)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ab Charakter-Level 2 · Kosten 5</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+10</strong> <span class="tech-name">(MaxHP)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+1</strong> <span class="tech-name">(MaxHP)</span></li>
+                  <li>Blockchance <strong>+1 %</strong> <span class="tech-name">(BlockRate)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ab Charakter-Level 3 · Kosten 10</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+100</strong> <span class="tech-name">(MaxHP)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ab Charakter-Level 4 · Kosten 15</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+20</strong> <span class="tech-name">(MaxHP)</span></li>
+                  <li>Dash-Ladungen <strong>-1</strong> <span class="tech-name">(DashPointBonus)</span></li>
+                  <li>Blockchance <strong>+5 %</strong> <span class="tech-name">(BlockRate)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>
+                <strong>HP-Bonus bei Block</strong> <span class="tech-name">(MaxHpOnBlock)</span>
+                <br />+3 Max-HP (flat) bei jedem Block
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ab Charakter-Level 5 · Kosten 20</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Max. HP <strong>+10</strong> <span class="tech-name">(MaxHP)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>
+                <strong>Schaden durch Bonus-HP</strong>
+                <span class="tech-name">(DamagePerBonusHp)</span>
+                <br />+3 % Schaden (von Basis-Schaden) je 10 Bonus-Max-HP, abgerundet
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============ Vaylen ============ -->
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/characters/vaylen.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Vaylen</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Set</th>
+              <th>Freischaltung</th>
+              <th>Basis-Perks (einmalig)</th>
+              <th>Level-Up-Perks (pro Level-Up)</th>
+              <th>Trait</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ab Charakter-Level 1 · Kosten 0</td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+20 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+3 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ab Charakter-Level 2 · Kosten 5</td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+10 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                  <li>Biomasse-Bonus-Chance <strong>+10 %</strong> <span class="tech-name">(BiomassBonusChance)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Biomasse-Bonus-Chance <strong>+1 %</strong> <span class="tech-name">(BiomassBonusChance)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ab Charakter-Level 3 · Kosten 10</td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+10 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>
+                <strong>EXP-Bonus bei Loot-Magnet</strong>
+                <span class="tech-name">(IncreaseXpOnLootMagnet)</span>
+                <div class="callout callout-warning">
+                  ⚠ Trait ist im Enum definiert, wird aber an keiner Stelle im Code abgefragt
+                  → aktuell <strong>wirkungslos</strong>.
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ab Charakter-Level 4 · Kosten 15</td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+5 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+3 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                </ul>
+              </td>
+              <td>
+                <strong>Schaden durch Bonus-EXP</strong>
+                <span class="tech-name">(DamagePerBonusXp)</span>
+                <br />+ Bonus-EXP-Rate als Schadens-Bonus (1:1)
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ab Charakter-Level 5 · Kosten 20</td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+25 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                  <li>Erlittener Schaden <strong>+200 %</strong> <span class="tech-name">(IncomingDamageMultiplier)</span></li>
+                  <li>Bewegungsgeschwindigkeit <strong>-10 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                </ul>
+                <div class="callout callout-warning">
+                  ⚠ "Glaskanone"-Set: <code>bonus += base(1.0) * 2.0</code> →
+                  <code>IncomingDamageMultiplier</code> gesamt = 3.0 → der Charakter nimmt
+                  <strong>x3 Schaden</strong>.
+                </div>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>EXP-Rate <strong>+3 %</strong> <span class="tech-name">(ExperienceRate)</span></li>
+                  <li>Krit. Chance <strong>+2 %</strong> <span class="tech-name">(CriticalChance)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============ Ensa ============ -->
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/characters/ensa.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Ensa</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Set</th>
+              <th>Freischaltung</th>
+              <th>Basis-Perks (einmalig)</th>
+              <th>Level-Up-Perks (pro Level-Up)</th>
+              <th>Trait</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ab Charakter-Level 1 · Kosten 0</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+10 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+1 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ab Charakter-Level 2 · Kosten 5</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+5 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                  <li>Dash-Reichweite <strong>+15 %</strong> <span class="tech-name">(DashRangeMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Reichweite <strong>+3 %</strong> <span class="tech-name">(DashRangeMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ab Charakter-Level 3 · Kosten 10</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+5 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                  <li>Event-Aktivierungsrate <strong>+10 %</strong> <span class="tech-name">(EventActivationMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+1 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                </ul>
+              </td>
+              <td>
+                <strong>Tempo-Bonus bei Speed-Bubble</strong>
+                <span class="tech-name">(IncreaseSpeedOnSpeedBubble)</span>
+                <br />+3 % Bewegungsgeschwindigkeit zusätzlich, solange die Speed-Bubble aktiv
+                ist (<code>Player.HandleSpeedBuffTraits</code>)
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ab Charakter-Level 4 · Kosten 15</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+5 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                  <li>Event-Aktivierungsrate <strong>+15 %</strong> <span class="tech-name">(EventActivationMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>
+                <strong>Längere Speed-Buff-Dauer</strong>
+                <span class="tech-name">(IncreaseedSpeedBuffDuration)</span>
+                <br />Dauer der Speed-Bubble x1.5
+                (<a href="../../Assets/Scripts/Player.cs#L374-L375">Player.cs:374-375</a>)
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ab Charakter-Level 5 · Kosten 20</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Bewegungsgeschwindigkeit <strong>+10 %</strong> <span class="tech-name">(MoveSpeed)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>
+                <strong>Schaden durch Tempo</strong>
+                <span class="tech-name">(DamagePerSpeed)</span>
+                <br />+ (Bonus-Bewegungsgeschwindigkeit × 0,05) als Schadens-Bonus
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============ Mo Ying ============ -->
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/characters/mo-ying.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Mo Ying</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Set</th>
+              <th>Freischaltung</th>
+              <th>Basis-Perks (einmalig)</th>
+              <th>Level-Up-Perks (pro Level-Up)</th>
+              <th>Trait</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ab Charakter-Level 1 · Kosten 0</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+20 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+3 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ab Charakter-Level 2 · Kosten 5</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+10 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                  <li>Dash-Ladungen <strong>+1</strong> <span class="tech-name">(DashPointBonus)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ab Charakter-Level 3 · Kosten 10</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+10 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Krit. Schaden <strong>+3 %</strong> <span class="tech-name">(CriticalDamage)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ab Charakter-Level 4 · Kosten 15</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+5 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                  <li>Mycelium-Bonus-Chance <strong>+10 %</strong> <span class="tech-name">(MyceliumBonusChance)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+1 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ab Charakter-Level 5 · Kosten 20</td>
+              <td>
+                <ul class="perk-list">
+                  <li>Dash-Aufladegeschwindigkeit <strong>+10 %</strong> <span class="tech-name">(DashRecoveryMultiplier)</span></li>
+                  <li>Krit. Schaden <strong>+20 %</strong> <span class="tech-name">(CriticalDamage)</span></li>
+                  <li>Max. HP <strong>-50</strong> <span class="tech-name">(MaxHP)</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="perk-list">
+                  <li>Krit. Schaden <strong>+2 %</strong> <span class="tech-name">(CriticalDamage)</span></li>
+                </ul>
+              </td>
+              <td>–</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p>
+      Rohdaten: <a href="../Balancing/character-perks.csv">character-perks.csv</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Daten-Stand: 2026-06-10 · Quelle: <code>Docs/Balancing/character-perks.csv</code></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

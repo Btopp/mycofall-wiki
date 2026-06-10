@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingame Perks – Survivor Wiki</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="perks">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-title">🍄 Survivor – Wiki</a>
+      <nav class="main-nav">
+        <a href="story.html" data-page="story" class="wip">Story</a>
+        <a href="characters.html" data-page="characters">Characters &amp; Perksets</a>
+        <a href="perks.html" data-page="perks">Ingame Perks</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="artifacts.html" data-page="artifacts">Artifacts</a>
+        <a href="enemies.html" data-page="enemies" class="wip">Enemies</a>
+        <a href="maps.html" data-page="maps" class="wip">Maps</a>
+        <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Ingame Perks</h1>
+    <p class="intro">
+      Der allgemeine Perk-Pool, aus dem bei jedem Level-Up zusätzlich zu den
+      Charakter-Level-Up-Perks gewählt werden kann. Es gibt 15 Stat-Typen, jeweils in den
+      Raritäten <span class="badge badge-common">Common</span>,
+      <span class="badge badge-rare">Rare</span> und
+      <span class="badge badge-epic">Epic</span> (45 Perk-Assets insgesamt). Eine
+      <span class="badge badge-legendary">Legendary</span>-Stufe existiert im Rarity-Enum,
+      wird im Perk-Pool aber aktuell nicht verwendet.
+    </p>
+
+    <input
+      class="table-search"
+      type="search"
+      data-table-search="#perks-table"
+      placeholder="Perk suchen…"
+    />
+
+    <div class="table-wrap">
+      <table class="data-table" id="perks-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Perk</th>
+            <th>Common</th>
+            <th>Rare</th>
+            <th>Epic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/move-speed.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Bewegungsgeschwindigkeit <span class="tech-name">(MoveSpeed)</span></td>
+            <td>+3 %</td>
+            <td>+6 %</td>
+            <td>+9 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/max-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Max. HP <span class="tech-name">(MaxHP)</span></td>
+            <td>+9</td>
+            <td>+18</td>
+            <td>+27</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/experience-rate.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>EXP-Rate <span class="tech-name">(ExperienceRate)</span></td>
+            <td>+7 %</td>
+            <td>+14 %</td>
+            <td>+21 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Krit. Schaden <span class="tech-name">(CriticalDamage)</span></td>
+            <td>+10 %</td>
+            <td>+20 %</td>
+            <td>+30 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/physical-resistance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Rüstung / physische Resistenz <span class="tech-name">(PhysicalResistance)</span></td>
+            <td>+1</td>
+            <td>+2</td>
+            <td>+3</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/block-rate.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Blockchance <span class="tech-name">(BlockRate)</span></td>
+            <td>+2 %</td>
+            <td>+4 %</td>
+            <td>+6 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Krit. Chance <span class="tech-name">(CriticalChance)</span></td>
+            <td>+3 %</td>
+            <td>+6 %</td>
+            <td>+9 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/damage-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Schaden <span class="tech-name">(DamageMultiplier)</span></td>
+            <td>+8 %</td>
+            <td>+16 %</td>
+            <td>+24 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/mycelium-bonus-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Mycelium-Bonus-Chance <span class="tech-name">(MyceliumBonusChance)</span></td>
+            <td>+5 %</td>
+            <td>+10 %</td>
+            <td>+15 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/luck.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Glück <span class="tech-name">(Luck)</span></td>
+            <td>+10 %</td>
+            <td>+20 %</td>
+            <td>+30 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/health-recovery-per-second.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>HP-Regeneration <span class="tech-name">(HealthRecoveryPerSecond)</span></td>
+            <td>+0.2 HP/Sek.</td>
+            <td>+0.4 HP/Sek.</td>
+            <td>+0.6 HP/Sek.</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/dash-recovery-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Dash-Aufladegeschwindigkeit <span class="tech-name">(DashRecoveryMultiplier)</span></td>
+            <td>+5 %</td>
+            <td>+10 %</td>
+            <td>+15 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/dash-range-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Dash-Reichweite <span class="tech-name">(DashRangeMultiplier)</span></td>
+            <td>+5 %</td>
+            <td>+10 %</td>
+            <td>+15 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/biomass-bonus-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Biomasse-Bonus-Chance <span class="tech-name">(BiomassBonusChance)</span></td>
+            <td>+5 %</td>
+            <td>+10 %</td>
+            <td>+15 %</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/event-activation-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Event-Aktivierungsrate <span class="tech-name">(EventActivationMultiplier)</span></td>
+            <td>+5 %</td>
+            <td>+10 %</td>
+            <td>+15 %</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Rohdaten: <a href="../Balancing/general-perks.csv">general-perks.csv</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Daten-Stand: 2026-06-10 · Quelle: <code>Docs/Balancing/general-perks.csv</code></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

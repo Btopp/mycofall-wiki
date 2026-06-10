@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills – Survivor Wiki</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="skills">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-title">🍄 Survivor – Wiki</a>
+      <nav class="main-nav">
+        <a href="story.html" data-page="story" class="wip">Story</a>
+        <a href="characters.html" data-page="characters">Characters &amp; Perksets</a>
+        <a href="perks.html" data-page="perks">Ingame Perks</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="artifacts.html" data-page="artifacts">Artifacts</a>
+        <a href="enemies.html" data-page="enemies" class="wip">Enemies</a>
+        <a href="maps.html" data-page="maps" class="wip">Maps</a>
+        <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Skills</h1>
+    <p class="intro">
+      Es gibt 8 aktive Skills. Jeder Skill hat kaufbare <strong>Morphs</strong>
+      (Shop-Upgrades, bezahlt mit Mycelium, ggf. zusätzlich Biomasse/Amber bei hohem
+      Gesamt-Invest und
+      kann über <strong>Evolutionen</strong> auf bis zu 4 Stufen weiterentwickelt werden:
+      Stufe 0 (Targeting), Stufe 1 (skill-spezifisch), Stufe 2 (Spezialeffekt) und Stufe 3
+      (genereller Stat-Boost).
+    </p>
+
+    <!-- ============ Generische Evolutionen ============ -->
+    <div class="section">
+      <h2>Generische Evolutionen</h2>
+      <p>Diese Optionen stehen (mit Einschränkungen) bei jedem Skill zur Verfügung.</p>
+
+      <h3>Stufe 0 – Targeting &amp; Bonus-Schaden</h3>
+      <ul class="perk-list">
+        <li><img class="icon-img icon-sm" src="icons/evolutions/nearest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Ziel = nächster Gegner <span class="tech-name">(TargetNearestEnemy)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/lowest-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Ziel = wenigste HP <span class="tech-name">(TargetLowestHP)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/highest-max-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Ziel = höchste Max-HP <span class="tech-name">(TargetHighestMaxHP)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/furthest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Ziel = weitester Gegner <span class="tech-name">(TargetFurthestEnemy)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/flying-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Ziel = fliegender Gegner <span class="tech-name">(TargetFlyingEnemy)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/bonus-vs-ground.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Bonus vs. Bodengegner: ×1.5 Schaden <span class="tech-name">(bonusVsGroundMultiplier, Default 1.5)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/bonus-vs-flying.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Bonus vs. Flieger: ×1.5 Schaden <span class="tech-name">(bonusVsFlyingMultiplier, Default 1.5)</span></li>
+        <li><img class="icon-img icon-sm" src="icons/evolutions/bonus-vs-elite.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Bonus vs. Elite-Gegner: ×1.5 Schaden <span class="tech-name">(bonusVsEliteMultiplier, Default 1.5)</span></li>
+      </ul>
+
+      <h3>Stufe 2 – Spezialeffekte</h3>
+      <ul class="perk-list">
+        <li>
+          <img class="icon-img icon-sm" src="icons/evolutions/dot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">
+          <strong>Damage over Time</strong> <span class="tech-name">(Evolution2_DamageOverTime)</span><br />
+          Dauer 5 Sek., Tick alle 1 Sek., Basisschaden 10 × Schadensmultiplikator 0.5
+        </li>
+        <li>
+          <img class="icon-img icon-sm" src="icons/evolutions/slow.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">
+          <strong>Slow</strong> <span class="tech-name">(Evolution2_Slow)</span><br />
+          Verlangsamt getroffene Gegner. Stärke ist pro Skill unterschiedlich (siehe Tabelle
+          unten).
+        </li>
+        <li>
+          <img class="icon-img icon-sm" src="icons/evolutions/vampire.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">
+          <strong>Vampire</strong> <span class="tech-name">(Evolution2_Vampire)</span><br />
+          Aktiviert Lebensentzug für diesen Skill.
+        </li>
+      </ul>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Slow-Stärke pro Skill (Evolution2_Slow)</caption>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Slow</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Spore Shot</td><td>40 %</td></tr>
+            <tr><td>Thorns</td><td>35 %</td></tr>
+            <tr><td>Spore Area</td><td>30 %</td></tr>
+            <tr><td>Boomerang</td><td>40 %</td></tr>
+            <tr><td>Pinecone Rain</td><td>40 %</td></tr>
+            <tr><td>Plant Bombs</td><td>50 %</td></tr>
+            <tr><td>Slash</td><td>30 %</td></tr>
+            <tr><td>Beam</td><td>40 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Stufe 3 – Generischer Stat-Boost</h3>
+      <p>
+        Nur wirksam, wenn der gewählte Skill ein passendes Morph/EvoMorph-Template für den
+        jeweiligen Stat besitzt.
+      </p>
+
+      <input
+        class="table-search"
+        type="search"
+        data-table-search="#evo3-table"
+        placeholder="Stat suchen…"
+      />
+
+      <div class="table-wrap">
+        <table class="data-table" id="evo3-table">
+          <thead>
+            <tr>
+              <th>Stat</th>
+              <th>Effekt</th>
+              <th>Gültig für</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Schaden <span class="tech-name">(damage)</span></td>
+              <td>×1.30 (+30 %)</td>
+              <td>alle Skills mit passendem Evolution-Template</td>
+            </tr>
+            <tr>
+              <td>Cooldown <span class="tech-name">(cooldown)</span></td>
+              <td>×0.85 (−15 %)</td>
+              <td>Spore Shot, Thorns, Spore Area, Pinecone Rain (Skill 1/2/3/5)</td>
+            </tr>
+            <tr>
+              <td>Krit. Chance <span class="tech-name">(criticalChance)</span></td>
+              <td>+5 %-Punkte</td>
+              <td>alle Skills</td>
+            </tr>
+            <tr>
+              <td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td>
+              <td>+20 %-Punkte</td>
+              <td>alle Skills</td>
+            </tr>
+            <tr>
+              <td>Reichweite <span class="tech-name">(range)</span></td>
+              <td>×1.20 (+20 %)</td>
+              <td>Spore Shot, Slash, Beam (Skill 1/7/8)</td>
+            </tr>
+            <tr>
+              <td>Winkel <span class="tech-name">(angle)</span></td>
+              <td>×1.20 (+20 %)</td>
+              <td>nur Slash (Skill 7)</td>
+            </tr>
+            <tr>
+              <td>Geschwindigkeit <span class="tech-name">(speed)</span></td>
+              <td>×1.20 (+20 %)</td>
+              <td>nur Boomerang (Skill 4)</td>
+            </tr>
+            <tr>
+              <td>Ziel-Anzahl <span class="tech-name">(targetAmount)</span></td>
+              <td>+1</td>
+              <td>Thorns, Beam (Skill 2/8)</td>
+            </tr>
+            <tr>
+              <td>Anzahl Objekte <span class="tech-name">(entityAmount)</span></td>
+              <td>+1</td>
+              <td>Boomerang, Plant Bombs, Slash (Skill 4/6/7)</td>
+            </tr>
+            <tr>
+              <td>Durchschlagskraft <span class="tech-name">(piercingAmount)</span></td>
+              <td>+1</td>
+              <td>nur Spore Shot (Skill 1)</td>
+            </tr>
+            <tr>
+              <td>Lebensdauer <span class="tech-name">(lifeTime)</span></td>
+              <td>×1.20 (+20 %)</td>
+              <td>nur Plant Bombs (Skill 6)</td>
+            </tr>
+            <tr>
+              <td>Explosionsradius <span class="tech-name">(explosionRange)</span></td>
+              <td>×1.20 (+20 %)</td>
+              <td>Pinecone Rain, Plant Bombs (Skill 5/6)</td>
+            </tr>
+            <tr>
+              <td>Effektradius <span class="tech-name">(effectRadius)</span></td>
+              <td>×1.20 (+20 %)</td>
+              <td>nur Spore Area (Skill 3)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============ Skill 1: Spore Shot ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/spore-shot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">1. Spore Shot</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Reichweite <span class="tech-name">(range)</span></td><td>+0.5</td><td>35</td><td>–</td></tr>
+            <tr><td>Durchschlagskraft <span class="tech-name">(piercingAmount)</span></td><td>+1</td><td>100</td><td>–</td></tr>
+            <tr><td>Cooldown <span class="tech-name">(cooldown)</span></td><td>×0.90 (−10 %)</td><td>50</td><td>min. 10 % des Basis-Cooldowns</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Sniper</strong> <span class="tech-name">(Sporeshot_Evo_Sniper)</span><br />
+          Schaden ×2.00 (+100 %), Cooldown ×2.00 (langsamer), Durchschlagskraft +3,
+          Reichweite +20 % (zusätzlich: Trigger-Reichweite ×1.2, Projektil-Lebensdauer ×1.2)
+        </li>
+        <li>
+          <strong>Minigun</strong> <span class="tech-name">(Sporeshot_Evo_Minigun)</span><br />
+          Cooldown ×0.50 (doppelte Feuerrate), Spread-Schüsse (± minigunSpreadAngle)
+        </li>
+        <li>
+          <strong>Variante 3</strong> <span class="tech-name">(Sporeshot_Evo_3)</span><br />
+          Stub – nur visuelle Variante, kein Stat-Effekt.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 2: Thorns ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/thorns.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">2. Thorns</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Cooldown <span class="tech-name">(cooldown)</span></td><td>×0.90 (−10 %)</td><td>50</td><td>min. 10 % des Basis-Cooldowns</td></tr>
+            <tr><td>Ziel-Anzahl <span class="tech-name">(targetAmount)</span></td><td>+1</td><td>100</td><td>max. 15</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Big Thorn</strong> <span class="tech-name">(Thorn_Evo_BigThorn)</span><br />
+          Schaden +75 %-Punkte, Krit. Chance +5 %-Punkte, Krit. Schaden +75 %-Punkte
+          (VFX-Variante: großer Dorn)
+        </li>
+        <li>
+          <strong>Thorn Field</strong> <span class="tech-name">(Thorn_Evo_ThornField)</span><br />
+          Cooldown ×0.75 (−25 %), Ziel-Anzahl +3 (Stub)
+        </li>
+        <li>
+          <strong>Variante 3</strong> <span class="tech-name">(Thorn_Evo_3)</span><br />
+          Stub – kein Effekt hinterlegt.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 3: Spore Area ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/spore-area.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">3. Spore Area</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Effektradius <span class="tech-name">(effectRadius)</span></td><td>+1.25</td><td>100</td><td>max. 17</td></tr>
+            <tr><td>Cooldown <span class="tech-name">(cooldown)</span></td><td>×0.90 (−10 %)</td><td>50</td><td>min. 10 % des Basis-Cooldowns</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Variante 1</strong> <span class="tech-name">(Spores_Evo_1)</span><br />
+          Radius skaliert mit dem eigenen HP-Anteil: ×1.5 bei 10 % HP bis ×0.5 bei 100 % HP
+          (linear interpoliert) – je weniger HP, desto größer der Radius.
+        </li>
+        <li>
+          <strong>Risky</strong> <span class="tech-name">(Spores_Evo_2)</span><br />
+          Krit. Schaden +75 %-Punkte. Zusätzlich: Schaden 100 % im inneren 20 %-Radius,
+          linear abfallend auf 50 % am äußeren Rand.
+        </li>
+        <li>
+          <strong>Knockback</strong> <span class="tech-name">(Spores_Evo_3)</span><br />
+          Jeder 4. Tick verursacht Knockback und doppelten Schaden.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 4: Boomerang ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/boomerang.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">4. Boomerang</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Geschwindigkeit <span class="tech-name">(speed)</span></td><td>+10</td><td>50</td><td>–</td></tr>
+            <tr><td>Anzahl Objekte <span class="tech-name">(entityAmount)</span></td><td>+1</td><td>100</td><td>max. 15</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Variante 1</strong> <span class="tech-name">(Boomerang_Evo_1)</span><br />
+          Tatsächlicher Effekt: Skalierungsfaktor ×2.5, zusätzlicher Flugradius +1.
+          <div class="callout callout-warning">
+            ⚠ Das Asset trägt einen <span class="tech-name">effectRadius ×120 %</span>-Eintrag,
+            der aber im evoMorphs-Template von Skill 4 fehlt → dieser Eintrag wird beim
+            Anwenden ignoriert.
+          </div>
+        </li>
+        <li>
+          <strong>Variante 2</strong> <span class="tech-name">(Boomerang_Evo_2)</span>
+          <div class="callout callout-warning">
+            ⚠ Kein <span class="tech-name">SkillEvolution</span>-Asset vorhanden. Im Code
+            existiert ein <span class="tech-name">shouldCollectXP=true</span>-Branch, laut
+            Kommentar aktuell "Not used".
+          </div>
+        </li>
+        <li>
+          <strong>Variante 3</strong> <span class="tech-name">(Boomerang_Evo_3)</span><br />
+          Anzahl Objekte +2 (Stub)
+        </li>
+        <li>
+          <strong>Variante 4</strong> <span class="tech-name">(Boomerang_Evo_4)</span><br />
+          Geschwindigkeit ×1.30 (+30 %), Schaden ×1.20 (+20 %); Tight Orbit – Orbit-Radius ×0.5
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 5: Pinecone Rain ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/pinecone-rain.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">5. Pinecone Rain</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Explosionsradius <span class="tech-name">(explosionRange)</span></td><td>+0.75</td><td>75</td><td>max. 20</td></tr>
+            <tr><td>Cooldown <span class="tech-name">(cooldown)</span></td><td>×0.90 (−10 %)</td><td>50</td><td>min. 10 % des Basis-Cooldowns</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Variante 1</strong> <span class="tech-name">(Pinecone_Evo_1)</span><br />
+          Schaden +150 %-Punkte (Stub)
+        </li>
+        <li>
+          <strong>Variante 2</strong> <span class="tech-name">(Pinecone_Evo_2)</span><br />
+          Krit. Chance +5 %-Punkte, Krit. Schaden +75 %-Punkte (Stub)
+        </li>
+        <li>
+          <strong>Multi-Target</strong> <span class="tech-name">(Pinecone_Evo_3)</span><br />
+          Trifft 3 statt 1 Ziel <span class="tech-name">(multiTargetAmount=3)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 6: Plant Bombs ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/plant-bombs.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">6. Plant Bombs</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Explosionsradius <span class="tech-name">(explosionRange)</span></td><td>+1</td><td>75</td><td>max. 20</td></tr>
+            <tr><td>Anzahl Objekte <span class="tech-name">(entityAmount)</span></td><td>+1</td><td>50</td><td>–</td></tr>
+            <tr><td>Lebensdauer <span class="tech-name">(lifeTime)</span></td><td>+5</td><td>25</td><td>–</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Heal Bubble</strong> <span class="tech-name">(Bomb_Plant_Evo_HealBubble)</span><br />
+          Spawnt eine Heal-Bubble-Variante <span class="tech-name">(spawnItemID=0)</span>
+        </li>
+        <li>
+          <strong>Speed Bubble</strong> <span class="tech-name">(Bomb_Plant_Evo_SpeedBubble)</span><br />
+          Spawnt eine Speed-Bubble-Variante <span class="tech-name">(spawnItemID=1)</span>
+        </li>
+        <li>
+          <strong>Crit Flower</strong> <span class="tech-name">(Bomb_Plant_Evo_CritFlower)</span><br />
+          Krit. Chance +5 %-Punkte, Krit. Schaden +75 %-Punkte (Stub)
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 7: Slash ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/slash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">7. Slash</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Reichweite <span class="tech-name">(range)</span></td><td>+0.75</td><td>50</td><td>max. 10</td></tr>
+            <tr><td>Winkel <span class="tech-name">(angle)</span></td><td>+15°</td><td>45</td><td>max. 240°</td></tr>
+            <tr><td>Anzahl Objekte <span class="tech-name">(entityAmount)</span></td><td>+1</td><td>100</td><td>max. 5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Mirror Slash</strong> <span class="tech-name">(Slash_Evo_1)</span><br />
+          Zweiter Slash in entgegengesetzter Richtung <span class="tech-name">(evoMirrorSlash=true)</span>
+        </li>
+        <li>
+          <strong>Long Sword</strong> <span class="tech-name">(Slash_Evo_2)</span><br />
+          Schaden ×1.50 (+50 %), Reichweite ×1.50 (+50 %), Winkel +10°; Cooldown ×4 über
+          <span class="tech-name">evo2CooldownMultiplier</span> <span class="tech-name">(evoLongSword=true)</span>
+        </li>
+        <li>
+          <strong>Crowd Cleaver</strong> <span class="tech-name">(Slash_Evo_3)</span><br />
+          Schadensmultiplikator = 1.0 + (Trefferanzahl − 3) × 0.3, minimal 0.3
+          <span class="tech-name">(evoManyTargetsBonus=true)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ Skill 8: Beam ============ -->
+    <div class="skill-block">
+      <h2><img class="icon-img icon-md" src="icons/skills/beam.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">8. Beam</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Morphs</caption>
+          <thead>
+            <tr><th>Stat</th><th>Effekt pro Kauf</th><th>Mycelium-Preis</th><th>Grenzwert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Schaden <span class="tech-name">(damage)</span></td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
+            <tr><td>Krit. Chance <span class="tech-name">(criticalChance)</span></td><td>+1 %-Punkt</td><td>10</td><td>max. 100 %</td></tr>
+            <tr><td>Krit. Schaden <span class="tech-name">(criticalDamage)</span></td><td>+10 %-Punkte</td><td>10</td><td>–</td></tr>
+            <tr><td>Reichweite <span class="tech-name">(range)</span></td><td>+0.5</td><td>50</td><td>max. 10</td></tr>
+            <tr><td>Ziel-Anzahl <span class="tech-name">(targetAmount)</span></td><td>+1</td><td>100</td><td>max. 10</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Evolutionen (Stufe 1)</h3>
+      <ul class="perk-list">
+        <li>
+          <strong>Stacking Beam</strong> <span class="tech-name">(Beam_Evo_1)</span><br />
+          Schaden steigt pro Tick, solange die Verbindung hält
+          (+<span class="tech-name">evo1InitialGrowthRate</span>/Tick, Decay ×<span class="tech-name">evo1GrowthDecayFactor</span>)
+        </li>
+        <li>
+          <strong>Chain Lightning</strong> <span class="tech-name">(Beam_Evo_2)</span><br />
+          Springt auf <span class="tech-name">evo2ChainCount</span> weitere Ziele im Radius
+          <span class="tech-name">evo2ChainRange</span>, Schaden ×<span class="tech-name">evo2ChainDamageMultiplier</span>
+        </li>
+        <li>
+          <strong>Pierce</strong> <span class="tech-name">(Beam_Evo_3)</span><br />
+          Durchschlägt Ziele mit Breite <span class="tech-name">pierceBeamWidth</span>,
+          Schaden ×<span class="tech-name">pierceDamageMultiplier</span>
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Rohdaten: <a href="../Balancing/morphs.csv">morphs.csv</a> ·
+      <a href="../Balancing/evomorphs.csv">evomorphs.csv</a> ·
+      <a href="../Balancing/evolutions.csv">evolutions.csv</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Daten-Stand: 2026-06-10 · Quelle: <code>Docs/Balancing/morphs.csv</code>, <code>evolutions.csv</code></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
