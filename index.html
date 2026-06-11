@@ -1,94 +1,77 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mycofall – Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js"></script>
 </head>
 <body data-page="home">
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="site-title">🍄 Mycofall – Wiki</a>
-      <nav class="main-nav">
-        <a href="story.html" data-page="story" class="wip">Story</a>
-        <a href="characters.html" data-page="characters">Characters &amp; Perksets</a>
-        <a href="perks.html" data-page="perks">Ingame Perks</a>
-        <a href="skills.html" data-page="skills">Skills</a>
-        <a href="artifacts.html" data-page="artifacts">Artifacts</a>
-        <a href="enemies.html" data-page="enemies" class="wip">Enemies</a>
-        <a href="maps.html" data-page="maps" class="wip">Maps</a>
-        <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
-      </nav>
-    </div>
-  </header>
+
+  <site-header class="site-header"></site-header>
 
   <main>
     <h1>Mycofall – Wiki</h1>
     <p class="intro">
-      Inoffizielles Nachschlagewerk rund um Charaktere, Perks, Skills und Artefakte von
-      <strong>Mycofall</strong>.
+      Unofficial reference for characters, perks, skills, and artifacts of <strong>Mycofall</strong>.
     </p>
 
     <div class="category-grid">
       <a class="category-card wip" href="story.html">
         <span class="icon">📖</span>
         <h2>Story</h2>
-        <p>Hintergrundgeschichte und Lore der Spielwelt.</p>
-        <span class="status">In Arbeit</span>
+        <p>Background story and lore of the game world.</p>
+        <span class="status">Work in progress</span>
       </a>
 
       <a class="category-card" href="characters.html">
         <span class="icon">🧝</span>
         <h2>Characters &amp; Perksets</h2>
-        <p>4 Charaktere, je 5 alternative Perk-Sets mit Basis-Perks, Level-Up-Boni und Traits.</p>
+        <p>4 characters, each with 5 alternative perksets featuring base perks, level-up bonuses, and traits.</p>
       </a>
 
       <a class="category-card" href="perks.html">
         <span class="icon">✨</span>
-        <h2>Ingame Perks</h2>
-        <p>Allgemeiner Perk-Pool: 15 Stat-Typen in den Raritäten Common, Rare und Epic.</p>
+        <h2>In-Game Perks</h2>
+        <p>General perk pool: 15 stat types in the Common, Rare, and Epic rarities.</p>
       </a>
 
       <a class="category-card" href="skills.html">
         <span class="icon">🎯</span>
         <h2>Skills</h2>
-        <p>8 aktive Skills mit kaufbaren Morphs und bis zu 3 Evolutionsstufen.</p>
+        <p>8 active skills with purchasable morphs and up to 3 evolution tiers.</p>
       </a>
 
       <a class="category-card" href="artifacts.html">
         <span class="icon">🏺</span>
         <h2>Artifacts</h2>
-        <p>16 Artefakte mit Stat-Boosts, Skalierungs- und Trigger-Effekten.</p>
+        <p>16 artifacts with stat boosts, scaling effects, and triggered effects.</p>
       </a>
 
       <a class="category-card wip" href="enemies.html">
         <span class="icon">👹</span>
         <h2>Enemies</h2>
-        <p>Übersicht der Gegnertypen und ihrer Eigenschaften.</p>
-        <span class="status">In Arbeit</span>
+        <p>Overview of enemy types and their characteristics.</p>
+        <span class="status">Work in progress</span>
       </a>
 
       <a class="category-card wip" href="maps.html">
         <span class="icon">🗺️</span>
         <h2>Maps</h2>
-        <p>Beschreibung und kleine Karte pro Gebiet.</p>
-        <span class="status">In Arbeit</span>
+        <p>Description and a small map for each area.</p>
+        <span class="status">Work in progress</span>
       </a>
 
       <a class="category-card wip" href="achievements.html">
         <span class="icon">🏆</span>
         <h2>Achievements</h2>
-        <p>Liste aller Erfolge und Freischaltbedingungen.</p>
-        <span class="status">In Arbeit</span>
+        <p>List of all achievements and their unlock conditions.</p>
+        <span class="status">Work in progress</span>
       </a>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <p>Daten-Stand: 2026-06-10 · Quelle: <code>Docs/Balancing/</code></p>
-  </footer>
-
-  <script src="js/main.js"></script>
+  <site-footer class="site-footer"></site-footer>
 </body>
 </html>

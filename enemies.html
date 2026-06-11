@@ -1,41 +1,198 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enemies – Survivor Wiki</title>
+  <title>Enemies – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js"></script>
 </head>
 <body data-page="enemies">
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="site-title">🍄 Survivor – Wiki</a>
-      <nav class="main-nav">
-        <a href="story.html" data-page="story" class="wip">Story</a>
-        <a href="characters.html" data-page="characters">Characters &amp; Perksets</a>
-        <a href="perks.html" data-page="perks">Ingame Perks</a>
-        <a href="skills.html" data-page="skills">Skills</a>
-        <a href="artifacts.html" data-page="artifacts">Artifacts</a>
-        <a href="enemies.html" data-page="enemies" class="wip">Enemies</a>
-        <a href="maps.html" data-page="maps" class="wip">Maps</a>
-        <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
-      </nav>
-    </div>
-  </header>
+  <site-header class="site-header"></site-header>
 
   <main>
     <h1>Enemies</h1>
-    <div class="placeholder">
-      <span class="icon">👹</span>
-      <p>Übersicht der Gegnertypen, ihrer Werte und Verhaltensmuster.</p>
-      <p>Diese Seite ist noch in Arbeit.</p>
+    <p class="intro">
+      Mycofall currently features 12 regular enemy types plus a recurring
+      boss and a special event enemy. Stats shown are base values at Wave 1
+      &mdash; HP, damage, and XP scale up with the wave tier and difficulty.
+    </p>
+
+    <input class="table-search" type="search" data-table-search="#enemies-table" placeholder="Search enemies…" />
+
+    <div class="table-wrap">
+      <table class="data-table" id="enemies-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>From Wave</th>
+            <th>HP</th>
+            <th>Move Speed</th>
+            <th>Attack Damage</th>
+            <th>XP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/ant.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Ant</td>
+            <td>Ground</td>
+            <td>1</td>
+            <td>12</td>
+            <td>8.2</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/larva.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Larva</td>
+            <td>Ground</td>
+            <td>1</td>
+            <td>18</td>
+            <td>5.8</td>
+            <td>6</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/big-ant.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Big Ant</td>
+            <td>Ground</td>
+            <td>2</td>
+            <td>25</td>
+            <td>7.5</td>
+            <td>8</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/flying-bug.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Flying Bug</td>
+            <td>Flying</td>
+            <td>2</td>
+            <td>32</td>
+            <td>9.5</td>
+            <td>12</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/bork.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Bork</td>
+            <td>Ground</td>
+            <td>3</td>
+            <td>50</td>
+            <td>6.4</td>
+            <td>8</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/tick.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Tick</td>
+            <td>Ground</td>
+            <td>4</td>
+            <td>90</td>
+            <td>8.5</td>
+            <td>20</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/big-larva.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Big Larva</td>
+            <td>Ground</td>
+            <td>5</td>
+            <td>28</td>
+            <td>6.4</td>
+            <td>9</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/cellar-beetle.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Cellar Beetle</td>
+            <td>Ground</td>
+            <td>6</td>
+            <td>30</td>
+            <td>9</td>
+            <td>8</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/horn-beetle.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Horn Beetle</td>
+            <td>Ground</td>
+            <td>7</td>
+            <td>70</td>
+            <td>10</td>
+            <td>20</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/loot-bug.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Loot Bug</td>
+            <td>Elite</td>
+            <td>8</td>
+            <td>50</td>
+            <td>10</td>
+            <td>15</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/toxic-spitter.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Toxic Spitter</td>
+            <td>Flying</td>
+            <td>11</td>
+            <td>55</td>
+            <td>10</td>
+            <td>4</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/enemies/big-cellar-beetle.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'"></td>
+            <td>Big Cellar Beetle</td>
+            <td>Ground</td>
+            <td>14</td>
+            <td>99</td>
+            <td>10</td>
+            <td>15</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Behavior Patterns</h2>
+    <ul class="perk-list">
+      <li><strong>Melee walkers</strong> (Ant, Big Ant, Larva, Big Larva, Bork, Tick, Horn Beetle, Mantis): chase the nearest player and attack on contact.</li>
+      <li><strong>Tick</strong>: slows down and unleashes a stronger attack once below 50% HP.</li>
+      <li><strong>Ranged fliers</strong> (Flying Bug, Toxic Spitter): keep their distance, dart in to attack, then fly away to reposition.</li>
+      <li><strong>Rollers</strong> (Cellar Beetle, Big Cellar Beetle): roll around the arena and damage players on collision.</li>
+      <li><strong>Loot Bug</strong>: doesn't attack &mdash; wanders, flees when hit or approached, and drops bonus XP when damaged.</li>
+      <li><strong>Greedle</strong> (event): doesn't attack &mdash; heads for the event objective, lingers, then leaves.</li>
+    </ul>
+
+    <h2>Boss &amp; Event Enemies</h2>
+
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/enemies/mantis.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Miss Mantis (Boss)</h2>
+      <p class="char-tagline">Placeholder description for the Miss Mantis boss.</p>
+      <p>Category: Elite &middot; HP 1500 &middot; Move Speed 8 &middot; Attack Damage 7 &middot; XP 50</p>
+      <p>Appears as the wave boss every 10 waves (10, 20, 30, …).</p>
+    </div>
+
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/enemies/greedle.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Greedle (Event)</h2>
+      <p class="char-tagline">Placeholder description for the Greedle event.</p>
+      <p>Category: Elite &middot; HP 280 &middot; Move Speed 3.2 &middot; Attack Damage 15 &middot; XP 50</p>
+      <p>Appears as a special event encounter from wave 5, then every 10 waves (5, 15, 25, …). Doesn't fight back &mdash; heads for the event objective, lingers, then leaves.</p>
+    </div>
+
+    <div class="char-block">
+      <h2><img class="icon-img icon-portrait" src="icons/enemies/rammhorn.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Lord Rammhorn (Interactable Event)</h2>
+      <p class="char-tagline">Placeholder description for the Lord Rammhorn event.</p>
+      <p>Category: Elite &middot; HP 200 &middot; Move Speed 10 &middot; Attack Damage 25 &middot; XP 10</p>
+      <p>Appears as a special interactable event encounter from wave 8, then every 5 waves (8, 13, 18, …).</p>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <p>Daten-Stand: 2026-06-10 · Quelle: <code>Docs/Balancing/</code></p>
-  </footer>
-
-  <script src="js/main.js"></script>
+  <site-footer class="site-footer"></site-footer>
 </body>
 </html>

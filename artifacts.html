@@ -1,117 +1,89 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artifacts – Survivor Wiki</title>
+  <title>Artifacts – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js"></script>
 </head>
 <body data-page="artifacts">
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="site-title">🍄 Survivor – Wiki</a>
-      <nav class="main-nav">
-        <a href="story.html" data-page="story" class="wip">Story</a>
-        <a href="characters.html" data-page="characters">Characters &amp; Perksets</a>
-        <a href="perks.html" data-page="perks">Ingame Perks</a>
-        <a href="skills.html" data-page="skills">Skills</a>
-        <a href="artifacts.html" data-page="artifacts">Artifacts</a>
-        <a href="enemies.html" data-page="enemies" class="wip">Enemies</a>
-        <a href="maps.html" data-page="maps" class="wip">Maps</a>
-        <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
-      </nav>
-    </div>
-  </header>
+  <site-header class="site-header"></site-header>
 
   <main>
     <h1>Artifacts</h1>
     <p class="intro">
-      16 Artefakte mit drei Effekt-Arten: <strong>Stat-Boost</strong> (fester Bonus auf einen
-      Stat), <strong>Scaling Passive</strong> (ein Bonus-Stat skaliert einen anderen Stat) und
-      <strong>Event Triggered</strong> (eine Aktion wird durch ein Spielereignis ausgelöst).
-      Ein Artefakt mit <span class="badge badge-unique">Unique</span> kann pro Run nur einmal
-      gefunden werden. Aktuell besitzen alle Artefakte die Rarity
+      16 artifacts with three effect types: <strong>Stat Boost</strong> (a fixed
+      bonus to a stat), <strong>Scaling Passive</strong> (a bonus stat scales
+      another stat), and <strong>Event Triggered</strong> (an action is
+      triggered by a game event). An artifact marked
+      <span class="badge badge-unique">Unique</span> can only be found once per
+      run. Currently, all artifacts have the rarity
       <span class="badge badge-common">Common</span>.
     </p>
-
-    <div class="callout callout-warning">
-      <strong>Trigger-Status:</strong> Nicht alle <span class="tech-name">ArtifactTrigger</span>-Arten
-      sind aktuell verdrahtet (<span class="tech-name">PlayerArtifacts.RegisterEventEffect</span>).
-      Funktionieren: <span class="tech-name">OnArtifactSelected</span>,
-      <span class="tech-name">OnDash</span>, <span class="tech-name">OnLevelUp</span>,
-      <span class="tech-name">OnDamageTaken</span>, <span class="tech-name">OnHPBelowThreshold</span>.
-      <strong>Ohne Effekt</strong>: <span class="tech-name">OnKill</span>,
-      <span class="tech-name">OnBlock</span>, <span class="tech-name">OnLootMagnet</span>,
-      <span class="tech-name">OnSpeedBuff</span> (fallen aktuell in den <code>default</code>-Branch).
-    </div>
 
     <div class="artifact-grid">
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/bloom-of-renewal.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Bloom of Renewal <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Bei jedem Level-Up: Heilt <strong>30 HP</strong></li>
+          <li>On every level-up: heals <strong>30 HP</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/critical-mind.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Critical Mind <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Krit. Schaden <strong>+30 %</strong></li>
+          <li>Crit Damage <strong>+30 %</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/forest-tribute.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Forest Tribute <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Beim Aufsammeln (einmalig): <strong>+100 Mycelium</strong></li>
-          <li>Beim Aufsammeln (einmalig): <strong>+5 Biomasse</strong></li>
-          <li>Beim Aufsammeln (einmalig): <strong>+1 Amber</strong></li>
+          <li>When picked up (one-time): <strong>+100 Mycelium</strong></li>
+          <li>When picked up (one-time): <strong>+5 Biomass</strong></li>
+          <li>When picked up (one-time): <strong>+1 Amber</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/fortune-spore.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Fortune Spore <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Krit. Chance <strong>+15 %</strong></li>
+          <li>Crit Chance <strong>+15 %</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/healing-dash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Healing Dash <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
         <ul>
-          <li>Bei jedem Dash: Heilt <strong>3 HP</strong></li>
+          <li>On every dash: heals <strong>3 HP</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/heartroot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Heartroot <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Max. HP <strong>+50</strong></li>
+          <li>Max HP <strong>+50</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/jumper.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Jumper <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Zusätzliche Dash-Ladung <strong>+1</strong> <span class="tech-name">(DashPointBonus)</span></li>
+          <li>Additional Dash Charge <strong>+1</strong></li>
         </ul>
-        <div class="callout callout-warning">
-          ⚠ Effect-Asset/Variable heißt <span class="tech-name">DahPoint</span>
-          (Tippfehler für <span class="tech-name">DashPoint</span>) – funktional ohne Auswirkung.
-        </div>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/last-breath-fury.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Last Breath Fury <span class="badge badge-common">Common</span></h3>
         <ul>
           <li>
-            Solange HP <strong>&lt; 30 %</strong>: Schaden <strong>+100 %</strong>
-            <span class="tech-name">(DamageMultiplier)</span>
+            While HP <strong>&lt; 30 %</strong>: Damage <strong>+100 %</strong>
           </li>
         </ul>
         <div class="callout">
-          Wird automatisch wieder entfernt, sobald die HP über die 30 %-Schwelle steigen
-          <span class="tech-name">(ReverseThresholdAction)</span>.
+          Automatically removed again once your HP rises back above the 30%
+          threshold.
         </div>
       </div>
 
@@ -119,8 +91,7 @@
         <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/lucky-bark.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Lucky Bark <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
         <ul>
           <li>
-            Blockchance steigt um <strong>10 %</strong> des Bonus-Glücks
-            <span class="tech-name">(BonusLuck × 0.1 → BlockRate)</span>
+            Block Chance increases by <strong>10 %</strong> of your bonus Luck
           </li>
         </ul>
       </div>
@@ -128,24 +99,24 @@
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/meat-detector.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Meat Detector <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Biomasse-Bonus-Chance <strong>+15 %</strong></li>
+          <li>Biomass Bonus Chance <strong>+15 %</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/mushroom-basket.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Mushroom Basket <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Mycelium-Bonus-Chance <strong>+15 %</strong></li>
+          <li>Mycelium Bonus Chance <strong>+15 %</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md" src="icons/artifacts/old-shoes.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Old Shoes <span class="badge badge-common">Common</span></h3>
         <ul>
-          <li>Bewegungsgeschwindigkeit <strong>+5 %</strong></li>
+          <li>Move Speed <strong>+5 %</strong></li>
         </ul>
         <div class="callout">
-          Trotz des Namens ein <strong>positiver</strong> Effekt.
+          Despite the name, this is a <strong>positive</strong> effect.
         </div>
       </div>
 
@@ -153,53 +124,43 @@
         <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/run-and-gun.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Run &amp; Gun <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
         <ul>
           <li>
-            Schaden steigt um <strong>10 %</strong> des Bonus-Lauftempos
-            <span class="tech-name">(BonusMoveSpeed × 0.1 → DamageMultiplier)</span>
+            Damage increases by <strong>10 %</strong> of your bonus Move Speed
           </li>
         </ul>
         <div class="callout">
-          Synergie mit allen Bewegungsgeschwindigkeits-Boni (z.B. Old Shoes, Ensa-Perksets).
+          Synergizes with all Move Speed bonuses (e.g. Old Shoes, Ensa perksets).
         </div>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/slimy-snail.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Slimy Snail <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
         <ul>
-          <li>Bewegungsgeschwindigkeit <strong>-20 %</strong></li>
-          <li>HP-Regeneration <strong>+1 HP/Sek.</strong></li>
+          <li>Move Speed <strong>-20 %</strong></li>
+          <li>HP Regeneration <strong>+1 HP/sec</strong></li>
         </ul>
         <div class="callout">
-          Trade-off: deutlich langsamer, dafür spürbare Dauerheilung.
+          Trade-off: noticeably slower, but a noticeable steady heal in return.
         </div>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/spore-dash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Spore Dash <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
         <ul>
-          <li>Bei jedem Dash: <strong>+2 Mycelium</strong></li>
+          <li>On every dash: <strong>+2 Mycelium</strong></li>
         </ul>
       </div>
 
       <div class="artifact-card">
         <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/thorn-shield.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/_placeholder.svg'">Thorn Shield <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
         <ul>
-          <li>Bei erlittenem Schaden: Reflektiert <strong>10 %</strong> des Schadens an den Angreifer</li>
-          <li>Beim Blocken: Reflektiert <strong>100 %</strong> des Schadens an den Angreifer</li>
+          <li>When taking damage: reflects <strong>10 %</strong> of the damage back to the attacker</li>
+          <li>When blocking: reflects <strong>100 %</strong> of the damage back to the attacker</li>
         </ul>
-        <div class="callout callout-warning">
-          ⚠ Der <span class="tech-name">OnBlock</span>-Trigger ist in
-          <span class="tech-name">PlayerArtifacts.RegisterEventEffect</span> noch nicht
-          verdrahtet → dieser Effekt ist aktuell <strong>wirkungslos</strong>.
-        </div>
       </div>
     </div>
 
   </main>
 
-  <footer class="site-footer">
-    <p>Daten-Stand: 2026-06-10 · Quelle: <code>Docs/Balancing/artifacts.csv</code></p>
-  </footer>
-
-  <script src="js/main.js"></script>
+  <site-footer class="site-footer"></site-footer>
 </body>
 </html>
