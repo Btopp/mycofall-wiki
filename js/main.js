@@ -4,7 +4,7 @@ class SiteHeader extends HTMLElement {
       <div class="header-inner">
         <a href="index.html" class="site-title">🍄 Mycofall – Wiki</a>
         <nav class="main-nav">
-          <a href="story.html" data-page="story" class="wip">Story</a>
+          <a href="game.html" data-page="game" class="wip">Game</a>
           <a href="characters.html" data-page="characters">Characters</a>
           <a href="skills.html" data-page="skills">Skills</a>
           <a href="perks.html" data-page="perks">Perks</a>
@@ -13,7 +13,7 @@ class SiteHeader extends HTMLElement {
           <a href="interactables.html" data-page="interactables">Interactables</a>
           <a href="enemies.html" data-page="enemies">Enemies</a>
           <a href="maps.html" data-page="maps">Maps</a>
-          <a href="achievements.html" data-page="achievements" class="wip">Achievements</a>
+          <a href="achievements.html" data-page="achievements">Achievements</a>
         </nav>
       </div>
     `;
