@@ -308,6 +308,14 @@ main > h1:first-child {
   background: var(--color-accent);
 }
 
+.badge-steam {
+  background: #1b2838;
+}
+
+.badge-ingame {
+  background: var(--color-primary);
+}
+
 /* ---------- Callouts ---------- */
 
 .callout {
@@ -419,6 +427,18 @@ main > h1:first-child {
   font-size: 3rem;
   display: block;
   margin-bottom: 1rem;
+}
+
+/* ---------- Title banner ---------- */
+
+.title-banner {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  background: var(--color-bg-alt);
 }
 
 /* ---------- Game-Element-Icons ---------- */
