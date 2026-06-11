@@ -27,7 +27,7 @@ class SiteHeader extends HTMLElement {
 class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <p>Last updated: 2026-06-10 · <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener">Mycofall on Steam</a></p>
+      <p>Last updated: 2026-06-11 · <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener">Mycofall on Steam</a></p>
     `;
   }
 }
