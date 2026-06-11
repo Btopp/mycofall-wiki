@@ -38,6 +38,7 @@ body {
 /* ---------- Header / Navigation ---------- */
 
 .site-header {
+  display: block;
   background: var(--color-primary-dark);
   color: #f5f0e6;
 }
@@ -123,6 +124,7 @@ main > h1:first-child {
 }
 
 .site-footer {
+  display: block;
   background: var(--color-bg-alt);
   color: var(--color-text-muted);
   text-align: center;
@@ -238,12 +240,6 @@ main > h1:first-child {
 
 .data-table tbody tr:hover {
   background: #efe6d2;
-}
-
-.tech-name {
-  font-size: 0.78rem;
-  color: var(--color-text-muted);
-  font-family: Consolas, "Courier New", monospace;
 }
 
 .perk-list {
@@ -363,6 +359,12 @@ main > h1:first-child {
   gap: 0.6rem;
 }
 
+.char-tagline {
+  margin: -0.3rem 0 1rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 .artifact-card h3 {
   margin: 0 0 0.4rem;
   display: flex;
@@ -374,6 +376,35 @@ main > h1:first-child {
 .artifact-card ul {
   margin: 0.4rem 0;
   padding-left: 1.3rem;
+}
+
+/* ---------- Maps ---------- */
+
+.map-block {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.map-overview {
+  display: block;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--color-bg-alt);
+}
+
+.map-body {
+  padding: 1.25rem;
+}
+
+.map-block h2 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 /* ---------- Placeholder pages ---------- */
