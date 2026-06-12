@@ -29,7 +29,7 @@ class SiteHeader extends HTMLElement {
 class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <p>Copyright (c) 2026 Lazy KodKod Games · <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener">Mycofall on Steam</a> · Last updated: 2026-06-11</p>
+      <p>Copyright © 2026 Lazy KodKod Games · <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener">Mycofall on Steam</a> · Last updated: 2026-06-11</p>
     `;
   }
 }
