@@ -5,89 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mycofall – Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/wiki-i18n.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body data-page="home">
   <site-header class="site-header"></site-header>
 
   <main>
+    <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener"><img class="title-banner" src="icons/game/banner.png" alt="Mycofall" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></a>
+
     <h1>Mycofall – Wiki</h1>
-    <p class="intro">
-      Official reference for characters, perks, skills, and artifacts of
-      <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener"><strong>Mycofall</strong></a>.<br>
-      <i>Keep in mind that not all values may be correct and some information may no longer be up to date.</i>
+    <p class="intro" data-i18n="wiki.intro" data-i18n-html>
+      Welcome to the official <a href="https://store.steampowered.com/app/3701190/Mycofall/" target="_blank" rel="noopener">Mycofall</a> Wiki! Choose a category below to explore
+      characters, skills, enemies, and everything else about the game.
+      Keep in mind that not all values may be correct and some information may no longer be up to date.
     </p>
 
     <div class="category-grid">
       <a class="category-card wip" href="game.html">
-        <span class="icon">🎮</span>
-        <h2>Game</h2>
-        <p>General info, how to play, and the story &amp; lore of the game world.</p>
-        <span class="status">Work in progress</span>
+        <img class="icon-img icon-md" src="icons/categories/mycofall.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Mycofall.title">Game</h2>
+        <p data-i18n="Codex:Mycofall.desc">Genre, setting, controls, and the core gameplay loop.</p>
+        <span class="status">WIP</span>
       </a>
 
       <a class="category-card" href="characters.html">
-        <span class="icon">🍄</span>
-        <h2>Characters</h2>
-        <p>4 characters, each with 5 alternative perksets featuring base perks, level-up bonuses, and traits.</p>
+        <img class="icon-img icon-md" src="icons/categories/character.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Character.title">Characters</h2>
+        <p data-i18n="Codex:Character.desc">Playable characters, perk sets, traits, and level-up perks.</p>
       </a>
 
       <a class="category-card" href="skills.html">
-        <span class="icon">🎯</span>
-        <h2>Skills</h2>
-        <p>8 active skills with purchasable morphs and up to 3 evolution tiers.</p>
+        <img class="icon-img icon-md" src="icons/categories/skill.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Skill.title">Skills</h2>
+        <p data-i18n="Codex:Skill.desc">Active skills, morphs, evolutions, and targeting options.</p>
       </a>
 
       <a class="category-card" href="perks.html">
-        <span class="icon">✨</span>
-        <h2>Perks</h2>
-        <p>General perk pool: 15 stat types in the Common, Rare, and Epic rarities.</p>
+        <img class="icon-img icon-md" src="icons/categories/perk.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Perk.title">Perks</h2>
+        <p data-i18n="Codex:Perk.desc">Passive stat bonuses found in the shop between waves.</p>
       </a>
 
       <a class="category-card" href="resources.html">
-        <span class="icon">🪙</span>
-        <h2>Resources</h2>
-        <p>The currencies and pickups you collect during a run and spend on upgrades.</p>
+        <img class="icon-img icon-md" src="icons/categories/resource.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Resource.title">Resources</h2>
+        <p data-i18n="Codex:Resource.desc">Mycelium, Biomass, Amber, and Meta Mushrooms.</p>
       </a>
 
       <a class="category-card" href="artifacts.html">
-        <span class="icon">🏺</span>
-        <h2>Artifacts</h2>
-        <p>16 artifacts with stat boosts, scaling effects, and triggered effects.</p>
+        <img class="icon-img icon-md" src="icons/categories/artifact.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Artifact.title">Artifacts</h2>
+        <p data-i18n="Codex:Artifact.desc">Unique and stackable artifacts with passive effects.</p>
       </a>
 
       <a class="category-card" href="interactables.html">
-        <span class="icon">⚡</span>
-        <h2>Interactables</h2>
-        <p>World events you can trigger by standing near them.</p>
+        <img class="icon-img icon-md" src="icons/categories/interactable.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Interactable.title">Interactables</h2>
+        <p data-i18n="Codex:Interactable.desc">World events: heal bubbles, speed boosts, loot magnets, and more.</p>
       </a>
 
       <a class="category-card" href="enemies.html">
-        <span class="icon">🐛</span>
-        <h2>Enemies</h2>
-        <p>Overview of enemy types and their characteristics.</p>
+        <img class="icon-img icon-md" src="icons/categories/enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Enemy.title">Enemies</h2>
+        <p data-i18n="Codex:Enemy.desc">All enemy types, their stats, behavior patterns, and boss encounters.</p>
       </a>
 
       <a class="category-card" href="maps.html">
-        <span class="icon">🗺️</span>
-        <h2>Maps</h2>
-        <p>Description and a small map for each area.</p>
+        <img class="icon-img icon-md" src="icons/categories/map.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Map.title">Maps</h2>
+        <p data-i18n="Codex:Map.desc">Playable maps and their unique features.</p>
       </a>
 
       <a class="category-card" href="achievements.html">
-        <span class="icon">🏆</span>
-        <h2>Achievements</h2>
-        <p>List of all achievements and their unlock conditions.</p>
+        <img class="icon-img icon-md" src="icons/categories/quest.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Quest.title">Achievements</h2>
+        <p data-i18n="Codex:Quest.desc">In-game quests and Steam achievements.</p>
       </a>
 
       <a class="category-card" href="https://discord.com/invite/xaWTnwu3EN" target="_blank" rel="noopener">
-        <span class="icon">💬</span>
-        <h2>Discord</h2>
-        <p>Share your feedback and become part of the community.</p>
+        <img class="icon-img icon-md" src="icons/categories/discord.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
+        <h2 data-i18n="Codex:Discord.title">Discord</h2>
+        <p data-i18n="Codex:Discord.desc">Join our community, share feedback, and find other players.</p>
       </a>
     </div>
   </main>
 
   <site-footer class="site-footer"></site-footer>
+  <script id="wiki-i18n" type="application/json">
+{
+  "de":{"wiki.intro":"Willkommen im offiziellen <a href=\"https://store.steampowered.com/app/3701190/Mycofall/\" target=\"_blank\" rel=\"noopener\">Mycofall</a>-Wiki! Wähle unten eine Kategorie, um Charaktere, Fähigkeiten, Gegner und alles Weitere über das Spiel zu erkunden. Beachte, dass nicht alle Werte korrekt sein müssen und einige Informationen veraltet sein können."},
+  "fr":{"wiki.intro":"Bienvenue sur le wiki officiel de <a href=\"https://store.steampowered.com/app/3701190/Mycofall/\" target=\"_blank\" rel=\"noopener\">Mycofall</a> ! Choisissez une catégorie ci-dessous pour explorer les personnages, les compétences, les ennemis et tout le reste du jeu. Notez que certaines valeurs peuvent être incorrectes et certaines informations peuvent ne plus être à jour."},
+  "es":{"wiki.intro":"¡Bienvenido a la wiki oficial de <a href=\"https://store.steampowered.com/app/3701190/Mycofall/\" target=\"_blank\" rel=\"noopener\">Mycofall</a>! Elige una categoría para explorar personajes, habilidades, enemigos y todo lo demás sobre el juego. Ten en cuenta que no todos los valores pueden ser correctos y que alguna información puede estar desactualizada."},
+  "ru":{"wiki.intro":"Добро пожаловать в официальную вики <a href=\"https://store.steampowered.com/app/3701190/Mycofall/\" target=\"_blank\" rel=\"noopener\">Mycofall</a>! Выберите категорию ниже, чтобы узнать о персонажах, навыках, врагах и обо всём остальном. Учтите, что не все значения могут быть точными, а часть информации может быть устаревшей."},
+  "zh":{"wiki.intro":"欢迎来到<a href=\"https://store.steampowered.com/app/3701190/Mycofall/\" target=\"_blank\" rel=\"noopener\">Mycofall</a>官方Wiki！选择下方的类别来探索角色、技能、敌人以及游戏的一切。请注意，部分数值可能不准确，某些信息可能已过时。"},
+  "ja":{"wiki.intro":"<a href=\"https://store.steampowered.com/app/3701190/Mycofall/\" target=\"_blank\" rel=\"noopener\">Mycofall</a>公式Wikiへようこそ！下のカテゴリーを選んで、キャラクター、スキル、敵など、ゲームのすべてを探索しましょう。すべての値が正確でない場合や、一部の情報が最新でない場合があることにご注意ください。"}
+}
+  </script>
 </body>
 </html>

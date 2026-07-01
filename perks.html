@@ -1,158 +1,162 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>In-Game Perks – Mycofall Wiki</title>
+  <title>Perks – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js"></script>
+  <script src="js/wiki-i18n.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body data-page="perks">
   <site-header class="site-header"></site-header>
-
   <main>
-    <h1>In-Game Perks</h1>
-    <p class="intro">
-      The general perk pool, from which you can choose in addition to your
-      character's level-up perks every time you level up. There are 15 stat
-      types, each available in the rarities
-      <span class="badge badge-common">Common</span>,
-      <span class="badge badge-rare">Rare</span>, and
-      <span class="badge badge-epic">Epic</span> (45 perk assets in total). A
-      <span class="badge badge-legendary">Legendary</span> rarity exists but
-      is not currently used in the perk pool.
-    </p>
-
-    <input
-      class="table-search"
-      type="search"
-      data-table-search="#perks-table"
-      placeholder="Search perks…"
-    />
-
+    <h1><span data-i18n="Codex:Perk.title">Perks</span></h1>
+    <p class="intro"><span data-i18n="Codex:Perk.desc">Passive stat bonuses found in the shop between waves.</span></p>
+    <input class="table-search" type="search" data-table-search="#perks-table" placeholder="Search…" />
     <div class="table-wrap">
       <table class="data-table" id="perks-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Perk</th>
-            <th>Common</th>
-            <th>Rare</th>
-            <th>Epic</th>
-          </tr>
-        </thead>
+        <thead><tr><th></th><th>Name</th><th>Description</th><th>Common</th><th>Rare</th><th>Epic</th><th>Legendary</th></tr></thead>
         <tbody>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/max-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Max HP</td>
-            <td>+9</td>
-            <td>+18</td>
-            <td>+27</td>
-          </tr>
-          <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/health-recovery.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Health Recovery</td>
-            <td>+0.2 HP/sec</td>
-            <td>+0.4 HP/sec</td>
-            <td>+0.6 HP/sec</td>
-          </tr>
-          <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Damage</td>
-            <td>+8 %</td>
-            <td>+16 %</td>
-            <td>+24 %</td>
-          </tr>
-          <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Critical Chance</td>
-            <td>+3 %</td>
-            <td>+6 %</td>
-            <td>+9 %</td>
-          </tr>
-          <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Critical Damage</td>
-            <td>+10 %</td>
-            <td>+20 %</td>
-            <td>+30 %</td>
-          </tr>
-          <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/speed.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Speed</td>
-            <td>+3 %</td>
-            <td>+6 %</td>
-            <td>+9 %</td>
-          </tr>
-          <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/armor.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Armor</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/physical-resistance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:PhysicalResistance.title">Armor</td>
+            <td data-i18n="Perks:PhysicalResistance.desc">Reduces incoming Damage by</td>
             <td>+1</td>
             <td>+2</td>
             <td>+3</td>
+            <td>+4</td>
           </tr>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/block-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Block Chance</td>
-            <td>+2 %</td>
-            <td>+4 %</td>
-            <td>+6 %</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/biomass-bonus-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:BiomassBonusChance.title">Biomass Bonus</td>
+            <td data-i18n="Perks:BiomassBonusChance.desc">Increases Chance to find bonus Biomass by</td>
+            <td>+5%</td>
+            <td>+10%</td>
+            <td>+15%</td>
+            <td>+20%</td>
           </tr>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/dash-recovery.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Dash Recovery</td>
-            <td>+5 %</td>
-            <td>+10 %</td>
-            <td>+15 %</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/block-rate.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:BlockRate.title">Block Chance</td>
+            <td data-i18n="Perks:BlockRate.desc">Increases chance to Block incoming Attack by</td>
+            <td>+2%</td>
+            <td>+4%</td>
+            <td>+6%</td>
+            <td>+8%</td>
           </tr>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/dash-range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Dash Range</td>
-            <td>+5 %</td>
-            <td>+10 %</td>
-            <td>+15 %</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:CriticalChance.title">Critical Chance</td>
+            <td data-i18n="Perks:CriticalChance.desc">Increases chance that attack is Critical by</td>
+            <td>+3%</td>
+            <td>+6%</td>
+            <td>+9%</td>
+            <td>+12%</td>
           </tr>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/perks/luck.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Luck</td>
-            <td>+10 %</td>
-            <td>+20 %</td>
-            <td>+30 %</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:CriticalDamage.title">Critical Damage</td>
+            <td data-i18n="Perks:CriticalDamage.desc">Increases Critical Damage by</td>
+            <td>+9%</td>
+            <td>+18%</td>
+            <td>+27%</td>
+            <td>+36%</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/damage-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:DamageMultiplier.title">Damage</td>
+            <td data-i18n="Perks:DamageMultiplier.desc">Increases Damage by</td>
+            <td>+8%</td>
+            <td>+16%</td>
+            <td>+24%</td>
+            <td>+30%</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/dash-range-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:DashRangeMultiplier.title">Dash Range</td>
+            <td data-i18n="Perks:DashRangeMultiplier.desc">Increase dash range by</td>
+            <td>+5%</td>
+            <td>+10%</td>
+            <td>+15%</td>
+            <td>+20%</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/dash-recovery-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:DashRecoveryMultiplier.title">Dash Recovery</td>
+            <td data-i18n="Perks:DashRecoveryMultiplier.desc">Increase dash recovery speed by</td>
+            <td>+5%</td>
+            <td>+10%</td>
+            <td>+15%</td>
+            <td>+20%</td>
           </tr>
           <tr>
             <td><img class="icon-img icon-sm" src="icons/perks/experience-rate.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Experience</td>
-            <td>+7 %</td>
-            <td>+14 %</td>
-            <td>+21 %</td>
+            <td data-i18n="Perks:ExperienceRate.title">Experience</td>
+            <td data-i18n="Perks:ExperienceRate.desc">Increases gained experience by</td>
+            <td>+7%</td>
+            <td>+14%</td>
+            <td>+21%</td>
+            <td>+28%</td>
           </tr>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/resources/mycelium.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Mycelium Bonus</td>
-            <td>+5 %</td>
-            <td>+10 %</td>
-            <td>+15 %</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/health-recovery-per-second.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:HealthRecoveryPerSecond.title">Health Recovery</td>
+            <td data-i18n="Perks:HealthRecoveryPerSecond.desc">Increases Health Recovery per second by</td>
+            <td>+0,2</td>
+            <td>+0,4</td>
+            <td>+0,6</td>
+            <td>+0,8</td>
           </tr>
           <tr>
-            <td><img class="icon-img icon-sm" src="icons/resources/biomass.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Biomass Bonus</td>
-            <td>+5 %</td>
-            <td>+10 %</td>
-            <td>+15 %</td>
+            <td><img class="icon-img icon-sm" src="icons/perks/event-activation-multiplier.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:EventActivationMultiplier.title">Interaction time</td>
+            <td data-i18n="Perks:EventActivationMultiplier.desc">Decrease time to activate Interactables</td>
+            <td>+5%</td>
+            <td>+10%</td>
+            <td>+15%</td>
+            <td>+20%</td>
           </tr>
-          <tr id="interaction-time">
-            <td><img class="icon-img icon-sm" src="icons/perks/interaction-time.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-            <td>Interaction Time</td>
-            <td>+5 %</td>
-            <td>+10 %</td>
-            <td>+15 %</td>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/luck.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:Luck.title">Luck</td>
+            <td data-i18n="Perks:Luck.desc">Increases chance for Perks with better Rarity by</td>
+            <td>+10%</td>
+            <td>+20%</td>
+            <td>+30%</td>
+            <td>+40%</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/max-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:MaxHP.title">Max. HP</td>
+            <td data-i18n="Perks:MaxHP.desc">Increases Max. HP by</td>
+            <td>+9</td>
+            <td>+18</td>
+            <td>+27</td>
+            <td>+36</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/mycelium-bonus-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:MyceliumBonusChance.title">Mycelium Bonus</td>
+            <td data-i18n="Perks:MyceliumBonusChance.desc">Increases Chance to find bonus Mycelium by</td>
+            <td>+4%</td>
+            <td>+8%</td>
+            <td>+12%</td>
+            <td>+15%</td>
+          </tr>
+          <tr>
+            <td><img class="icon-img icon-sm" src="icons/perks/move-speed.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
+            <td data-i18n="Perks:MoveSpeed.title">Speed</td>
+            <td data-i18n="Perks:MoveSpeed.desc">Increases Move Speed by</td>
+            <td>+3%</td>
+            <td>+6%</td>
+            <td>+9%</td>
+            <td>+12%</td>
           </tr>
         </tbody>
       </table>
     </div>
-
   </main>
-
   <site-footer class="site-footer"></site-footer>
 </body>
 </html>

@@ -1,432 +1,183 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Characters &amp; Perksets – Mycofall Wiki</title>
+  <title>Characters – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js"></script>
+  <script src="js/wiki-i18n.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body data-page="characters">
   <site-header class="site-header"></site-header>
-
   <main>
-    <h1>Characters &amp; Perksets</h1>
-    <p class="intro">
-      Each character has 5 alternative <strong>perksets</strong>. Each set unlocks
-      starting at a certain character level for a <a href="resources.html#mycelium">Mycelium</a> cost, and contains
-      base perks, level-up perks, and optionally a unique trait.
-    </p>
-
-    <div class="callout">
-      <strong>Important – how perksets work in a run:</strong> Only
-      <strong>ONE</strong> perkset is active per run (chosen before the run starts).
-      <ul>
-        <li>The <em>base perks</em> and the <em>trait</em> of the chosen set apply
-          <strong>once</strong> at the start of the run.</li>
-        <li>The <em>level-up perks</em> of the chosen set, however, are
-          automatically applied <strong>on every level-up</strong> in addition
-          to the normal perk choice.</li>
-      </ul>
-      A perkset is therefore more of a <strong>build decision</strong> than a
-      linear progression – the other 4 sets remain inactive for the run.
-    </div>
-
-    <!-- ============ Wortak ============ -->
+    <h1><span data-i18n="Codex:Character.title">Characters</span></h1>
+    <p class="intro"><span data-i18n="Codex:Character.desc">Choose from unique characters, each with their own perk sets and traits.</span></p>
     <div class="char-block">
-      <h2><img class="icon-img icon-portrait" src="icons/characters/wortak.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Wortak</h2>
-      <p class="char-tagline">Built to endure, he stands firm where others fall.</p>
+      <h2><img class="icon-img icon-portrait" src="icons/characters/wortak.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Characters:wortak.title">Wortak</span></h2>
+      <p class="char-tagline"><span data-i18n="Characters:wortak.desc">Built to endure, he stands firm where others fall.</span></p>
       <div class="table-wrap">
         <table class="data-table">
-          <thead>
-            <tr>
-              <th>Set</th>
-              <th>Unlock</th>
-              <th>Base Perks (one-time)</th>
-              <th>Level-Up Perks (per level-up)</th>
-              <th>Trait</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Set</th><th>Unlock</th><th>Base Perks</th><th>Traits</th></tr></thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>level 1 · cost 0</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+30</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+2</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Free</td>
+              <td><ul class="perk-list"><li><strong>+30</strong> Max. HP</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>2</td>
-              <td>level 2 · cost 5</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+10</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+1</strong></li>
-                  <li>Block Chance <strong>+1 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.2, 5 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10</strong> Max. HP</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>3</td>
-              <td>level 3 · cost 10</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+100</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>–</td>
+              <td>Lv.3, 10 Meta</td>
+              <td><ul class="perk-list"><li><strong>+100</strong> Max. HP</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>4</td>
-              <td>level 4 · cost 15</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+20</strong></li>
-                  <li>Dash Charges <strong>-1</strong></li>
-                  <li>Block Chance <strong>+5 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>
-                <strong>HP Bonus on Block</strong>
-                <br />+3 max HP (flat) on every block
-              </td>
+              <td>Lv.4, 15 Meta</td>
+              <td><ul class="perk-list"><li><strong>+20</strong> Max. HP</li><li><strong>-1</strong> Dash</li><li><strong>+5%</strong> Block Chance</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:MaxHpOnBlock.title">Increases Max HP on block.</span></li></ul></td>
             </tr>
             <tr>
               <td>5</td>
-              <td>level 5 · cost 20</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Max HP <strong>+10</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>
-                <strong>Damage from Bonus HP</strong>
-                <br />+3% damage (of base damage) per 10 bonus max HP, rounded down
-              </td>
+              <td>Lv.5, 20 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10</strong> Max. HP</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:DamagePerBonusHp.title">Increases damage for every 10 additional Max HP.</span></li></ul></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-
-    <!-- ============ Vaylen ============ -->
     <div class="char-block">
-      <h2><img class="icon-img icon-portrait" src="icons/characters/vaylen.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Vaylen</h2>
-      <p class="char-tagline">A true underdog, ready to prove his worth.</p>
+      <h2><img class="icon-img icon-portrait" src="icons/characters/vaylen.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Characters:vaylen.title">Vaylen</span></h2>
+      <p class="char-tagline"><span data-i18n="Characters:vaylen.desc">A true underdog, ready to prove his worth.</span></p>
       <div class="table-wrap">
         <table class="data-table">
-          <thead>
-            <tr>
-              <th>Set</th>
-              <th>Unlock</th>
-              <th>Base Perks (one-time)</th>
-              <th>Level-Up Perks (per level-up)</th>
-              <th>Trait</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Set</th><th>Unlock</th><th>Base Perks</th><th>Traits</th></tr></thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>level 1 · cost 0</td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+20 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+3 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Free</td>
+              <td><ul class="perk-list"><li><strong>+20%</strong> Experience</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>2</td>
-              <td>level 2 · cost 5</td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+10 %</strong></li>
-                  <li><a href="resources.html#biomass">Biomass</a> Bonus Chance <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li><a href="resources.html#biomass">Biomass</a> Bonus Chance <strong>+1 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.2, 5 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Experience</li><li><strong>+10%</strong> Biomass Bonus</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>3</td>
-              <td>level 3 · cost 10</td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>–</td>
+              <td>Lv.3, 10 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Experience</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:IncreaseXpOnLootMagnet.title">Increases collected XP with loot magnet.</span></li></ul></td>
             </tr>
             <tr>
               <td>4</td>
-              <td>level 4 · cost 15</td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+5 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+3 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <strong>Damage from Bonus XP</strong>
-                <br />+ bonus XP rate added as a damage bonus (1:1)
-              </td>
+              <td>Lv.4, 15 Meta</td>
+              <td><ul class="perk-list"><li><strong>+5%</strong> Experience</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:DamagePerBonusXp.title">Increases damage per bonus Experience rate.</span></li></ul></td>
             </tr>
             <tr>
               <td>5</td>
-              <td>level 5 · cost 20</td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+25 %</strong></li>
-                  <li>Damage Taken <strong>+200 %</strong></li>
-                  <li>Move Speed <strong>-10 %</strong></li>
-                </ul>
-                <div class="callout callout-warning">
-                  ⚠ "Glass Cannon" set: this Damage Taken bonus stacks on top of
-                  the base multiplier, for a total of <strong>×3 incoming
-                  damage</strong>.
-                </div>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>XP Rate <strong>+3 %</strong></li>
-                  <li>Crit Chance <strong>+2 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.5, 20 Meta</td>
+              <td><ul class="perk-list"><li><strong>+25%</strong> Experience</li><li><strong>+200%</strong> IncomingDamageMultiplier.title</li><li><strong>-10%</strong> Speed</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-
-    <!-- ============ Ensa ============ -->
     <div class="char-block">
-      <h2><img class="icon-img icon-portrait" src="icons/characters/ensa.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Ensa</h2>
-      <p class="char-tagline">She steps into battle with unmatched grace and speed.</p>
+      <h2><img class="icon-img icon-portrait" src="icons/characters/ensa.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Characters:ensa.title">Ensa</span></h2>
+      <p class="char-tagline"><span data-i18n="Characters:ensa.desc">She steps into battle with unmatched grace and speed.</span></p>
       <div class="table-wrap">
         <table class="data-table">
-          <thead>
-            <tr>
-              <th>Set</th>
-              <th>Unlock</th>
-              <th>Base Perks (one-time)</th>
-              <th>Level-Up Perks (per level-up)</th>
-              <th>Trait</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Set</th><th>Unlock</th><th>Base Perks</th><th>Traits</th></tr></thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>level 1 · cost 0</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+1 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Free</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Speed</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>2</td>
-              <td>level 2 · cost 5</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+5 %</strong></li>
-                  <li>Dash Range <strong>+15 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Range <strong>+3 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.2, 5 Meta</td>
+              <td><ul class="perk-list"><li><strong>+5%</strong> Speed</li><li><strong>+15%</strong> Dash Range</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>3</td>
-              <td>level 3 · cost 10</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+5 %</strong></li>
-                  <li>Event Activation Rate <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+1 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <strong>Speed Bonus during Speed Bubble</strong>
-                <br />+3% additional Move Speed while the Speed Bubble is active
-              </td>
+              <td>Lv.3, 10 Meta</td>
+              <td><ul class="perk-list"><li><strong>+5%</strong> Speed</li><li><strong>+10%</strong> Interaction time</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:IncreaseSpeedOnSpeedBubble.title">Permanently increases bonus speed when collecting a speed bubble.</span></li></ul></td>
             </tr>
             <tr>
               <td>4</td>
-              <td>level 4 · cost 15</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+5 %</strong></li>
-                  <li>Event Activation Rate <strong>+15 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>
-                <strong>Longer Speed Buff Duration</strong>
-                <br />Speed Bubble duration ×1.5
-              </td>
+              <td>Lv.4, 15 Meta</td>
+              <td><ul class="perk-list"><li><strong>+5%</strong> Speed</li><li><strong>+15%</strong> Interaction time</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:IncreaseedSpeedBuffDuration.title">Increases buff duration of speed bubble.</span></li></ul></td>
             </tr>
             <tr>
               <td>5</td>
-              <td>level 5 · cost 20</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Move Speed <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>
-                <strong>Damage from Speed</strong>
-                <br />+ (bonus Move Speed × 0.05) added as a damage bonus
-              </td>
+              <td>Lv.5, 20 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Speed</li></ul></td>
+              <td><ul class="perk-list"><li><span data-i18n="CharacterTraits:DamagePerSpeed.title">Increases damage with higher movement speed.</span></li></ul></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-
-    <!-- ============ Mo Ying ============ -->
     <div class="char-block">
-      <h2><img class="icon-img icon-portrait" src="icons/characters/mo-ying.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Mo Ying</h2>
-      <p class="char-tagline">Fast-growing, hardened to survive the darkest nights of the forest.</p>
+      <h2><img class="icon-img icon-portrait" src="icons/characters/mo-ying.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Characters:mo ying.title">Mo Ying</span></h2>
+      <p class="char-tagline"><span data-i18n="Characters:mo ying.desc">Fast-growing, hardened to survive the darkest nights of the forest.</span></p>
       <div class="table-wrap">
         <table class="data-table">
-          <thead>
-            <tr>
-              <th>Set</th>
-              <th>Unlock</th>
-              <th>Base Perks (one-time)</th>
-              <th>Level-Up Perks (per level-up)</th>
-              <th>Trait</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Set</th><th>Unlock</th><th>Base Perks</th><th>Traits</th></tr></thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>level 1 · cost 0</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+20 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+3 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Free</td>
+              <td><ul class="perk-list"><li><strong>+20%</strong> Dash Recovery</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>2</td>
-              <td>level 2 · cost 5</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+10 %</strong></li>
-                  <li>Dash Charges <strong>+1</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
-              <td>–</td>
+              <td>Lv.2, 5 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Dash Recovery</li><li><strong>+1</strong> Dash</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>3</td>
-              <td>level 3 · cost 10</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Crit Damage <strong>+3 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.3, 10 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Dash Recovery</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>4</td>
-              <td>level 4 · cost 15</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+5 %</strong></li>
-                  <li><a href="resources.html#mycelium">Mycelium</a> Bonus Chance <strong>+10 %</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+1 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.4, 15 Meta</td>
+              <td><ul class="perk-list"><li><strong>+5%</strong> Dash Recovery</li><li><strong>+10%</strong> Mycelium Bonus</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
             <tr>
               <td>5</td>
-              <td>level 5 · cost 20</td>
-              <td>
-                <ul class="perk-list">
-                  <li>Dash Recharge Speed <strong>+10 %</strong></li>
-                  <li>Crit Damage <strong>+20 %</strong></li>
-                  <li>Max HP <strong>-50</strong></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="perk-list">
-                  <li>Crit Damage <strong>+2 %</strong></li>
-                </ul>
-              </td>
-              <td>–</td>
+              <td>Lv.5, 20 Meta</td>
+              <td><ul class="perk-list"><li><strong>+10%</strong> Dash Recovery</li><li><strong>+20%</strong> Critical Damage</li><li><strong>-50</strong> Max. HP</li></ul></td>
+              <td><ul class="perk-list"></ul></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-
   </main>
-
   <site-footer class="site-footer"></site-footer>
 </body>
 </html>
