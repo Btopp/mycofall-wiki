@@ -1,166 +1,191 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Artifacts – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js"></script>
+  <script src="js/wiki-i18n.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body data-page="artifacts">
   <site-header class="site-header"></site-header>
-
   <main>
-    <h1>Artifacts</h1>
-    <p class="intro">
-      16 artifacts with three effect types: <strong>Stat Boost</strong> (a fixed
-      bonus to a stat), <strong>Scaling Passive</strong> (a bonus stat scales
-      another stat), and <strong>Event Triggered</strong> (an action is
-      triggered by a game event). An artifact marked
-      <span class="badge badge-unique">Unique</span> can only be found once per
-      run. Currently, all artifacts have the rarity
-      <span class="badge badge-common">Common</span>.
-    </p>
-
+    <h1><span data-i18n="Codex:Artifact.title">Artifacts</span></h1>
+    <p class="intro"><span data-i18n="Codex:Artifact.desc">Powerful items with unique passive effects. Found as wave rewards or quest unlocks.</span></p>
     <div class="artifact-grid">
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/bloom-of-renewal.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Bloom of Renewal <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>On every level-up: heals <strong>30 HP</strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/bloom-of-renewal.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:BloomOfRenewal.title">Bloom of Renewal</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:BloomOfRenewal.desc">Level rise, health replies.</span></p>
+        <ul class="perk-list">
+          <li>On Level Up: <strong>30</strong> HP</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/critical-mind.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Critical Mind <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>Crit Damage <strong>+30 %</strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/critical-mind.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:CriticalMind.title">Critical Mind</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:CriticalMind.desc">Strike with might, crit takes fight.</span></p>
+        <ul class="perk-list">
+          <li><strong>+30%</strong> Critical Damage</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/forest-tribute.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Forest Tribute <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>When picked up (one-time): <strong>+100 <a href="resources.html#mycelium">Mycelium</a></strong></li>
-          <li>When picked up (one-time): <strong>+5 <a href="resources.html#biomass">Biomass</a></strong></li>
-          <li>When picked up (one-time): <strong>+1 <a href="resources.html#amber">Amber</a></strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/forest-tribute.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:ForestTribute.title">Forest Tribute</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:ForestTribute.desc">Offer here, gifts appear.</span></p>
+        <ul class="perk-list">
+          <li>On Pickup: +<strong>100</strong> Mycelium</li>
+          <li>On Pickup: +<strong>5</strong> Biomass</li>
+          <li>On Pickup: +<strong>1</strong> Amber</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/fortune-spore.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Fortune Spore <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>Crit Chance <strong>+15 %</strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/fortune-spore.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:FortuneSpore.title">Fortune Spore</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:FortuneSpore.desc">Chance will rise, crit suprise.</span></p>
+        <ul class="perk-list">
+          <li><strong>+15%</strong> Critical Chance</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/healing-dash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Healing Dash <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
-        <ul>
-          <li>On every dash: heals <strong>3 HP</strong></li>
+        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/healing-dash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:HealingDash.title">Healing Dash</span> 
+          <span class="badge badge-rare">Rare</span>
+          <span class="badge badge-unique">Unique</span>
+        </h3>
+        <p><span data-i18n="Artifacts:HealingDash.desc">Dash the floor, heal once more.</span></p>
+        <ul class="perk-list">
+          <li>On Dash: <strong>3</strong> HP</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/heartroot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Heartroot <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>Max HP <strong>+50</strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/heartroot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:Heartroot.title">Heartroot</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:Heartroot.desc">Heart restored, wounds ignored.</span></p>
+        <ul class="perk-list">
+          <li><strong>+50</strong> Max. HP</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/jumper.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Jumper <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>Additional Dash Charge <strong>+1</strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/jumper.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:Jumper.title">Jumper</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:Jumper.desc">Dash again, move, the reign.</span></p>
+        <ul class="perk-list">
+          <li><strong>+1</strong> Dash</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/last-breath-fury.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Last Breath Fury <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>
-            While HP <strong>&lt; 30 %</strong>: Damage <strong>+100 %</strong>
-          </li>
-        </ul>
-        <div class="callout">
-          Automatically removed again once your HP rises back above the 30%
-          threshold.
-        </div>
-      </div>
-
-      <div class="artifact-card">
-        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/lucky-bark.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Lucky Bark <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
-        <ul>
-          <li>
-            Block Chance increases by <strong>10 %</strong> of your bonus Luck
-          </li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/last-breath-fury.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:LastBreathFury.title">Last Breath Fury</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:LastBreathFury.desc">Life runs low, fury grows.</span></p>
+        <ul class="perk-list">
+          <li>Under {0}% HP: <strong>+100%</strong> Damage</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/meat-detector.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Meat Detector <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li><a href="resources.html#biomass">Biomass</a> Bonus Chance <strong>+15 %</strong></li>
+        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/lucky-bark.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:LuckyBark.title">Lucky Bark</span> 
+          <span class="badge badge-rare">Rare</span>
+          <span class="badge badge-unique">Unique</span>
+        </h3>
+        <p><span data-i18n="Artifacts:LuckyBark.desc">Fortune's spark, hardened bark.</span></p>
+        <ul class="perk-list">
+          <li><strong>10%</strong> Luck → Block Chance</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/mushroom-basket.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Mushroom Basket <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li><a href="resources.html#mycelium">Mycelium</a> Bonus Chance <strong>+15 %</strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/meat-detector.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:MeatDetector.title">Meat Detector</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:MeatDetector.desc">Use the device, meat in a trice.</span></p>
+        <ul class="perk-list">
+          <li><strong>+15%</strong> Biomass Bonus</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md" src="icons/artifacts/old-shoes.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Old Shoes <span class="badge badge-common">Common</span></h3>
-        <ul>
-          <li>Move Speed <strong>+5 %</strong></li>
-        </ul>
-        <div class="callout">
-          Despite the name, this is a <strong>positive</strong> effect.
-        </div>
-      </div>
-
-      <div class="artifact-card">
-        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/run-and-gun.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Run &amp; Gun <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
-        <ul>
-          <li>
-            Damage increases by <strong>10 %</strong> of your bonus Move Speed
-          </li>
-        </ul>
-        <div class="callout">
-          Synergizes with all Move Speed bonuses (e.g. Old Shoes, Ensa perksets).
-        </div>
-      </div>
-
-      <div class="artifact-card">
-        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/slimy-snail.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Slimy Snail <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
-        <ul>
-          <li>Move Speed <strong>-20 %</strong></li>
-          <li>HP Regeneration <strong>+1 HP/sec</strong></li>
-        </ul>
-        <div class="callout">
-          Trade-off: noticeably slower, but a noticeable steady heal in return.
-        </div>
-      </div>
-
-      <div class="artifact-card">
-        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/spore-dash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Spore Dash <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
-        <ul>
-          <li>On every dash: <strong>+2 <a href="resources.html#mycelium">Mycelium</a></strong></li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/mushroom-basket.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:MushroomBasket.title">Mushroom Basket</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:MushroomBasket.desc">With a basket so fine, mushrooms I find.</span></p>
+        <ul class="perk-list">
+          <li><strong>+15%</strong> Mycelium Bonus</li>
         </ul>
       </div>
-
       <div class="artifact-card">
-        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/thorn-shield.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Thorn Shield <span class="badge badge-common">Common</span> <span class="badge badge-unique">Unique</span></h3>
-        <ul>
-          <li>When taking damage: reflects <strong>10 %</strong> of the damage back to the attacker</li>
-          <li>When blocking: reflects <strong>100 %</strong> of the damage back to the attacker</li>
+        <h3><img class="icon-img icon-md" src="icons/artifacts/old-shoes.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:OldShoes.title">Old Shoes</span> 
+          <span class="badge badge-rare">Rare</span>
+        </h3>
+        <p><span data-i18n="Artifacts:OldShoes.desc">Can't smell or see, but help you flee.</span></p>
+        <ul class="perk-list">
+          <li><strong>+5%</strong> Speed</li>
+        </ul>
+      </div>
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/run-and-gun.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:RunAndGun.title">Run and Gun</span> 
+          <span class="badge badge-rare">Rare</span>
+          <span class="badge badge-unique">Unique</span>
+        </h3>
+        <p><span data-i18n="Artifacts:RunAndGun.desc">Faster you go, more damage you show.</span></p>
+        <ul class="perk-list">
+          <li><strong>10%</strong> Speed → Damage</li>
+        </ul>
+      </div>
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/slimy-snail.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:SlimySnail.title">Slimy Snail</span> 
+          <span class="badge badge-rare">Rare</span>
+          <span class="badge badge-unique">Unique</span>
+        </h3>
+        <p><span data-i18n="Artifacts:SlimySnail.desc">Slow you slide, yet wounds subside.</span></p>
+        <ul class="perk-list">
+          <li><strong>-20%</strong> Speed</li>
+          <li><strong>+1</strong> Health Recovery</li>
+        </ul>
+      </div>
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/spore-dash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:SporeDash.title">Spore Dash</span> 
+          <span class="badge badge-rare">Rare</span>
+          <span class="badge badge-unique">Unique</span>
+        </h3>
+        <p><span data-i18n="Artifacts:SporeDash.desc">Dash the ground, spores are found.</span></p>
+        <ul class="perk-list">
+          <li>On Dash: +<strong>2</strong> Mycelium</li>
+        </ul>
+      </div>
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md icon-unique" src="icons/artifacts/thornshield.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> 
+          <span data-i18n="Artifacts:Thornshield.title">Thornshield</span> 
+          <span class="badge badge-rare">Rare</span>
+          <span class="badge badge-unique">Unique</span>
+        </h3>
+        <p><span data-i18n="Artifacts:Thornshield.desc">Hit the shell, feel it well.</span></p>
+        <ul class="perk-list">
+          <li>On Hit: <strong>10%</strong> reflect</li>
+          <li>On Block: <strong>100%</strong> reflect</li>
         </ul>
       </div>
     </div>
-
   </main>
-
   <site-footer class="site-footer"></site-footer>
 </body>
 </html>

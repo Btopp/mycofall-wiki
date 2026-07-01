@@ -1,490 +1,296 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js"></script>
+  <script src="js/wiki-i18n.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body data-page="skills">
   <site-header class="site-header"></site-header>
-
   <main>
-    <h1>Skills</h1>
-    <p class="intro">
-      There are 8 active skills. Each skill has purchasable
-      <strong>Morphs</strong> (shop upgrades paid with
-      <a href="resources.html#mycelium">Mycelium</a>, plus
-      <a href="resources.html#biomass">Biomass</a>/<a href="resources.html#amber">Amber</a>
-      for higher total investments) and can be upgraded via
-      <a href="#evolutions"><strong>Evolutions</strong></a> across up to 4 tiers: Tier 0 (Targeting),
-      Tier 1 (skill-specific), Tier 2 (special effect), and Tier 3 (generic
-      stat boost).
-    </p>
-
-    <!-- ============ Skill 1: Fungal Blaster ============ -->
+    <h1><span data-i18n="Codex:Skill.title">Skills</span></h1>
+    <p class="intro"><span data-i18n="Codex:Skill.desc">Active abilities that define your combat style. Upgrade them with morphs and evolutions.</span></p>
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/fungal-blaster.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Fungal Blaster</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/fungal-blast.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:fungalBlast.title">Fungal Blaster</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/target-nearest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:TargetNearestEnemy.title">Nearest</span></span></h2>
+      <p><span data-i18n="Skills:fungalBlast.desc">Fires a spore projectile straight toward an enemy.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Range</td><td>+0.5</td><td>35</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/piercing.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Piercing</td><td>+1</td><td>100</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Cooldown</td><td>×0.90 (−10 %)</td><td>50</td><td>min 10 % of base cooldown</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:range">Range</td><td><strong>+0,5</strong></td><td>35 Myc</td></tr>
+            <tr><td data-i18n="Morphs:piercingAmount">Piercing Amount</td><td><strong>+1</strong></td><td>100 Myc</td></tr>
+            <tr><td data-i18n="Morphs:cooldown">Cooldown</td><td><strong>×90%</strong></td><td>50 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Sniper</strong><br />
-          Damage ×2.00 (+100 %), Cooldown ×2.00 (slower), Piercing +3,
-          Range +20 % (additionally: trigger range ×1.2, projectile lifetime ×1.2)
-        </li>
-        <li>
-          <strong>Quick Fire</strong><br />
-          Cooldown ×0.50 (double fire rate), fires multiple spread shots within a cone
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/sporeshot-evo-sniper.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Sporeshot_Evo_Sniper.title">Sniper</span></strong>: <span data-i18n="Evolutions:Sporeshot_Evo_Sniper.desc">A strong and precise shot.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/sporeshot-evo-minigun.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Sporeshot_Evo_Minigun.title">Quick Fire</span></strong>: <span data-i18n="Evolutions:Sporeshot_Evo_Minigun.desc">Projectiles spread slightly.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:TargetNearestEnemy.title">Nearest</span></strong>: <span data-i18n="TargetingEvolutions:TargetNearestEnemy.desc">Aim at the nearest enemy.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetFlyingEnemy.title">Flying</span></strong>: <span data-i18n="TargetingEvolutions:TargetFlyingEnemy.desc">Primarily targets flying enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetHighestMaxHP.title">Highest max HP</span></strong>: <span data-i18n="TargetingEvolutions:TargetHighestMaxHP.desc">Aim at the enemy with highest max HP.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 2: Thorns ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/thorns.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Thorns</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/thorns.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:thorns.title">Thorns</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/target-nearest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:TargetNearestEnemy.title">Nearest</span></span></h2>
+      <p><span data-i18n="Skills:thorns.desc">Summons thorny growths from the ground that strike nearby enemies.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Cooldown</td><td>×0.90 (−10 %)</td><td>50</td><td>min 10 % of base cooldown</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Target Count</td><td>+1</td><td>100</td><td>max 15</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:cooldown">Cooldown</td><td><strong>×90%</strong></td><td>50 Myc</td></tr>
+            <tr><td data-i18n="Morphs:targetAmount">Target Amount</td><td><strong>+1</strong></td><td>100 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Big Thorn</strong><br />
-          Damage +75 percentage points, Crit Chance +5 percentage points, Crit
-          Damage +75 percentage points
-        </li>
-        <li>
-          <strong>Thorn Field</strong><br />
-          Cooldown ×0.75 (−25 %), Target Count +3
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/thorn-evo-big-thorn.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Thorn_Evo_BigThorn.title">Big Thorn</span></strong>: <span data-i18n="Evolutions:Thorn_Evo_BigThorn.desc">A dangerous thorn.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/thorn-evo-thorn-field.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Thorn_Evo_ThornField.title">Thorn Field</span></strong>: <span data-i18n="Evolutions:Thorn_Evo_ThornField.desc">Spawns several thorns.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:TargetNearestEnemy.title">Nearest</span></strong>: <span data-i18n="TargetingEvolutions:TargetNearestEnemy.desc">Aim at the nearest enemy.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetLowestHP.title">Lowest HP</span></strong>: <span data-i18n="TargetingEvolutions:TargetLowestHP.desc">Aim at the enemy with lowest HP.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetHighestMaxHP.title">Highest max HP</span></strong>: <span data-i18n="TargetingEvolutions:TargetHighestMaxHP.desc">Aim at the enemy with highest max HP.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 3: Spores ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/spore-area.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Spores</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/spores.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:spores.title">Spores</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/bonus-vs-ground.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></span></h2>
+      <p><span data-i18n="Skills:spores.desc">Emits a spore-filled aura around the player, dealing periodic damage to nearby enemies.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Effect Radius</td><td>+1.25</td><td>100</td><td>max 17</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Cooldown</td><td>×0.90 (−10 %)</td><td>50</td><td>min 10 % of base cooldown</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:effectRadius">Effect Radius</td><td><strong>+1,25</strong></td><td>100 Myc</td></tr>
+            <tr><td data-i18n="Morphs:cooldown">Cooldown</td><td><strong>×90%</strong></td><td>50 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Safety Spores</strong><br />
-          Radius scales with your current HP percentage: ×1.5 at 10 % HP down
-          to ×0.5 at 100 % HP (linearly interpolated) – the lower your HP, the
-          larger the radius.
-        </li>
-        <li>
-          <strong>Risky Spores</strong><br />
-          Crit Damage +75 percentage points. Additionally: 100 % damage within
-          the inner 20 % radius, linearly falling off to 50 % at the outer edge.
-        </li>
-        <li>
-          <strong>Charge Spores</strong><br />
-          Every 4th tick causes knockback and deals double damage.
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/spores-evo-1.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Spores_Evo_1.title">Safety Spores</span></strong>: <span data-i18n="Evolutions:Spores_Evo_1.desc">Reduces range by 50% at full health, but increases it by up to 50% when health is missing.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/spores-evo-2.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Spores_Evo_2.title">Risky Spores</span></strong>: <span data-i18n="Evolutions:Spores_Evo_2.desc">Closer enemies take 200% damage, but those further away take 50%.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/spores-evo-3.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Spores_Evo_3.title">Charge Spores</span></strong>: <span data-i18n="Evolutions:Spores_Evo_3.desc">Causes knockback and double damage every 4th tick.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsGround.desc">Deals more damage to ground enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsFlying.title">Flying Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsFlying.desc">Deals more damage to flying enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsElite.title">Elite Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsElite.desc">Deals more damage to elite and boss enemies.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 4: Boomerang ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/boomerang.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Boomerang</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/boomerang.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:boomerang.title">Boomerang</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/bonus-vs-flying.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:BonusVsFlying.title">Flying Damage</span></span></h2>
+      <p><span data-i18n="Skills:boomerang.desc">Throws thorny boomerang projectiles from the player, hitting anything in their path.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/speed.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Speed</td><td>+10</td><td>50</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Object Count</td><td>+1</td><td>100</td><td>max 15</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:speed">Speed</td><td><strong>+10</strong></td><td>50 Myc</td></tr>
+            <tr><td data-i18n="Morphs:entityAmount">Spawn Count</td><td><strong>+1</strong></td><td>100 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Big Boo'rang</strong><br />
-          Damage scaling factor ×2.5, additional flight range +1.
-        </li>
-        <li>
-          <strong>Triple Boomerang</strong><br />
-          Object Count +2
-        </li>
-        <li>
-          <strong>Small Orbit</strong><br />
-          Speed ×1.30 (+30 %), Damage ×1.20 (+20 %); Tight Orbit – orbit radius ×0.5
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/boomerang-evo-1.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Boomerang_Evo_1.title">Big Boo'rang</span></strong>: <span data-i18n="Evolutions:Boomerang_Evo_1.desc">Increased size.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/boomerang-evo-3.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Boomerang_Evo_3.title">Triple Boomerang</span></strong>: <span data-i18n="Evolutions:Boomerang_Evo_3.desc">Adds three boomerangs.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/boomerang-evo-4.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Boomerang_Evo_4.title">Small Orbit</span></strong>: <span data-i18n="Evolutions:Boomerang_Evo_4.desc">Boomerangs fly close to the player.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsFlying.title">Flying Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsFlying.desc">Deals more damage to flying enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsGround.desc">Deals more damage to ground enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsElite.title">Elite Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsElite.desc">Deals more damage to elite and boss enemies.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 5: Pinecone Rain ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/pinecone-rain.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Pinecone Rain</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/pinecone-rain.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:pineconeRain.title">Pinecone Rain</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/target-furthest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:TargetFurthestEnemy.title">Furthest</span></span></h2>
+      <p><span data-i18n="Skills:pineconeRain.desc">Calls down a pinecone meteor from the sky that targets an enemy and deals area damage on impact.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Explosion Radius</td><td>+0.75</td><td>75</td><td>max 20</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Cooldown</td><td>×0.90 (−10 %)</td><td>50</td><td>min 10 % of base cooldown</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:explosionRange">Explosion Range</td><td><strong>+0,75</strong></td><td>75 Myc</td></tr>
+            <tr><td data-i18n="Morphs:cooldown">Cooldown</td><td><strong>×90%</strong></td><td>50 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Pinecone Evo</strong><br />
-          Damage +150 percentage points
-        </li>
-        <li>
-          <strong>Critical Pinecone</strong><br />
-          Crit Chance +5 percentage points, Crit Damage +75 percentage points
-        </li>
-        <li>
-          <strong>Cone Rain</strong><br />
-          Hits 3 targets instead of 1
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/pinecone-evo-1.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Pinecone_Evo_1.title">Lame Cone</span></strong>: <span data-i18n="Evolutions:Pinecone_Evo_1.desc">Increased damage.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/pinecone-evo-2.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Pinecone_Evo_2.title">Critical Pinecone</span></strong>: <span data-i18n="Evolutions:Pinecone_Evo_2.desc">Critical Pinecone.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/pinecone-evo-3.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Pinecone_Evo_3.title">Cone Rain</span></strong>: <span data-i18n="Evolutions:Pinecone_Evo_3.desc">Spawns three pinecones per tick.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:TargetFurthestEnemy.title">Furthest</span></strong>: <span data-i18n="TargetingEvolutions:TargetFurthestEnemy.desc">Aim at the furthest enemy.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetFlyingEnemy.title">Flying</span></strong>: <span data-i18n="TargetingEvolutions:TargetFlyingEnemy.desc">Primarily targets flying enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetHighestMaxHP.title">Highest max HP</span></strong>: <span data-i18n="TargetingEvolutions:TargetHighestMaxHP.desc">Aim at the enemy with highest max HP.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 6: Plant Bombs ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/plant-bombs.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Plant Bombs</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/plant-bombs.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:plantBombs.title">Plant Bombs</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/bonus-vs-ground.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></span></h2>
+      <p><span data-i18n="Skills:plantBombs.desc">Spawns plant bombs across a wide area that the player can activate to detonate, dealing area damage to all enemies in range.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Explosion Radius</td><td>+1</td><td>75</td><td>max 20</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Object Count</td><td>+1</td><td>50</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Lifetime</td><td>+5</td><td>25</td><td>–</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:explosionRange">Explosion Range</td><td><strong>+1</strong></td><td>75 Myc</td></tr>
+            <tr><td data-i18n="Morphs:entityAmount">Spawn Count</td><td><strong>+1</strong></td><td>50 Myc</td></tr>
+            <tr><td data-i18n="Morphs:lifeTime">Lifetime</td><td><strong>+5</strong></td><td>25 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Friendly Flower</strong><br />
-          Spawns a Heal Bubble variant
-        </li>
-        <li>
-          <strong>Speed Bubble</strong><br />
-          Spawns a Speed Bubble variant
-        </li>
-        <li>
-          <strong>Critical Flower</strong><br />
-          Crit Chance +5 percentage points, Crit Damage +75 percentage points
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/bomb-plant-evo-heal-bubble.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Bomb_Plant_Evo_HealBubble.title">Friendly Flower</span></strong>: <span data-i18n="Evolutions:Bomb_Plant_Evo_HealBubble.desc">50% chance to spawn a Heal Bubble after explosion.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/bomb-plant-evo-speed-bubble.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Bomb_Plant_Evo_SpeedBubble.title">Speed Bubble</span></strong>: <span data-i18n="Evolutions:Bomb_Plant_Evo_SpeedBubble.desc">Gain an extra dash on trigger and a 50% chance to spawn a Speed Bubble after explosion.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/bomb-plant-evo-crit-flower.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Bomb_Plant_Evo_CritFlower.title">Critical Flower</span></strong>: <span data-i18n="Evolutions:Bomb_Plant_Evo_CritFlower.desc">Increase damage and crit chance.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsGround.desc">Deals more damage to ground enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsFlying.title">Flying Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsFlying.desc">Deals more damage to flying enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsElite.title">Elite Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsElite.desc">Deals more damage to elite and boss enemies.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 7: Rotblade ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/slash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Rotblade</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/slash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:slash.title">Rotblade</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/bonus-vs-ground.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></span></h2>
+      <p><span data-i18n="Skills:slash.desc">Swings the Rotblade close to the player. All enemies within the affected area are hit.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Range</td><td>+0.75</td><td>50</td><td>max 10</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/angle.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Angle</td><td>+15°</td><td>45</td><td>max 240°</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Object Count</td><td>+1</td><td>100</td><td>max 5</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:range">Range</td><td><strong>+0,75</strong></td><td>50 Myc</td></tr>
+            <tr><td data-i18n="Morphs:angle">Angle</td><td><strong>+15</strong></td><td>45 Myc</td></tr>
+            <tr><td data-i18n="Morphs:entityAmount">Spawn Count</td><td><strong>+1</strong></td><td>100 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Mirror Mycelium</strong><br />
-          A second slash in the opposite direction
-        </li>
-        <li>
-          <strong>Great Blade</strong><br />
-          Damage ×1.50 (+50 %), Range ×1.50 (+50 %), Angle +10°; Cooldown ×4
-        </li>
-        <li>
-          <strong>Rotting Cascade</strong><br />
-          Damage multiplier = 1.0 + (number of targets hit − 3) × 0.3, minimum 0.3
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/slash-evo-1.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Slash_Evo_1.title">Mirror Mycelium</span></strong>: <span data-i18n="Evolutions:Slash_Evo_1.desc">A second slash appears mirrored to the original attack direction.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/slash-evo-2.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Slash_Evo_2.title">Great Blade</span></strong>: <span data-i18n="Evolutions:Slash_Evo_2.desc">A slow but large and powerful sword.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/slash-evo-3.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Slash_Evo_3.title">Rotting Cascade</span></strong>: <span data-i18n="Evolutions:Slash_Evo_3.desc">Damage increases with the number of targets hit, but is lower against a single target.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsGround.title">Ground Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsGround.desc">Deals more damage to ground enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsFlying.title">Flying Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsFlying.desc">Deals more damage to flying enemies.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:BonusVsElite.title">Elite Damage</span></strong>: <span data-i18n="TargetingEvolutions:BonusVsElite.desc">Deals more damage to elite and boss enemies.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Skill 8: Hyphal Bridge ============ -->
     <div class="skill-block">
-      <h2><img class="icon-img icon-md" src="icons/skills/beam.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Hyphal Bridge</h2>
+      <h2><img class="icon-img icon-md" src="icons/skills/beam.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Skills:beam.title">Hyphal Bridge</span> <span class="badge"><img class="icon-img icon-sm" src="icons/skills/target-nearest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="TargetingEvolutions:TargetNearestEnemy.title">Nearest</span></span></h2>
+      <p><span data-i18n="Skills:beam.desc">Connects to the nearest enemy and continuously deals damage.</span></p>
+      <p>Price: 100 Mycelium</p>
+      <h3>Morphs</h3>
       <div class="table-wrap">
         <table class="data-table">
-          <caption>Morphs</caption>
-          <thead>
-            <tr><th></th><th>Stat</th><th>Effect per Purchase</th><th>Mycelium Cost</th><th>Limit</th></tr>
-          </thead>
+          <thead><tr><th>Stat</th><th>Effect</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Damage</td><td>×1.10 (+10 %)</td><td>25</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Chance</td><td>+1 percentage point</td><td>10</td><td>max 100 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Crit Damage</td><td>+10 percentage points</td><td>10</td><td>–</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Range</td><td>+0.5</td><td>50</td><td>max 10</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Target Count</td><td>+1</td><td>100</td><td>max 10</td></tr>
+            <tr><td data-i18n="Morphs:damage">Damage</td><td><strong>×110%</strong></td><td>25 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalChance">Critical Chance</td><td><strong>+1%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:criticalDamage">Critical Damage</td><td><strong>+10%</strong></td><td>10 Myc</td></tr>
+            <tr><td data-i18n="Morphs:range">Range</td><td><strong>+0,5</strong></td><td>50 Myc</td></tr>
+            <tr><td data-i18n="Morphs:targetAmount">Target Amount</td><td><strong>+1</strong></td><td>100 Myc</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Evolutions (Tier 1)</h3>
+      <h3>Evolutions</h3>
       <ul class="perk-list">
-        <li>
-          <strong>Focus</strong><br />
-          Damage increases by +10 % per tick while the beam stays connected to
-          a target, decaying ×0.98 per tick once the connection breaks.
-        </li>
-        <li>
-          <strong>Chain Link</strong><br />
-          Chains to 1 additional target within range 8, dealing ×0.5 damage to it.
-        </li>
-        <li>
-          <strong>In Between</strong><br />
-          Pierces through targets with the beam width reduced to ×0.5, dealing
-          ×0.5 damage to additional pierced targets.
-        </li>
+        <li><img class="icon-img icon-sm" src="icons/skills/beam-evo-1.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Beam_Evo_1.title">Focus</span></strong>: <span data-i18n="Evolutions:Beam_Evo_1.desc">Increases damage the longer a connection persists.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/beam-evo-2.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Beam_Evo_2.title">Chain Link</span></strong>: <span data-i18n="Evolutions:Beam_Evo_2.desc">Jumps from one enemy to another and deals 50% damage.</span></li>
+        <li><img class="icon-img icon-sm" src="icons/skills/beam-evo-3.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <strong><span data-i18n="Evolutions:Beam_Evo_3.title">In Between</span></strong>: <span data-i18n="Evolutions:Beam_Evo_3.desc">Deals 50% damage to enemies standing in the beam.</span></li>
+      </ul>
+      <h3>Targeting Options</h3>
+      <ul class="perk-list">
+        <li><strong><span data-i18n="TargetingEvolutions:TargetNearestEnemy.title">Nearest</span></strong>: <span data-i18n="TargetingEvolutions:TargetNearestEnemy.desc">Aim at the nearest enemy.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetFurthestEnemy.title">Furthest</span></strong>: <span data-i18n="TargetingEvolutions:TargetFurthestEnemy.desc">Aim at the furthest enemy.</span></li>
+        <li><strong><span data-i18n="TargetingEvolutions:TargetHighestMaxHP.title">Highest max HP</span></strong>: <span data-i18n="TargetingEvolutions:TargetHighestMaxHP.desc">Aim at the enemy with highest max HP.</span></li>
       </ul>
     </div>
-
-    <!-- ============ Generic Evolutions ============ -->
-    <div class="section" id="evolutions">
-      <h2>Generic Evolutions</h2>
-      <p>These options are available (with some restrictions) for every skill.</p>
-
-      <h3>Tier 0 – Targeting &amp; Bonus Damage</h3>
-      <ul class="perk-list">
-        <li><img class="icon-img icon-sm" src="icons/evolutions/nearest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Target: Nearest Enemy</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/lowest-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Target: Lowest HP</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/highest-max-hp.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Target: Highest Max HP</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/furthest-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Target: Furthest Enemy</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/flying-enemy.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Target: Flying Enemy</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/bonus-vs-ground.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Bonus vs. Ground Enemies: ×1.5 damage</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/bonus-vs-flying.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Bonus vs. Flying Enemies: ×1.5 damage</li>
-        <li><img class="icon-img icon-sm" src="icons/evolutions/bonus-vs-elite.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Bonus vs. Elite Enemies: ×1.5 damage</li>
-      </ul>
-
-      <h3>Tier 1 – Skill specific Evolutions</h3>
-      <p>
-        Tier 1 evolutions are unique to each skill — see the respective skill above for its options.
-      </p>
-      <h3>Tier 2 – Special Effects</h3>
-      <ul class="perk-list">
-        <li>
-          <img class="icon-img icon-sm" src="icons/evolutions/dot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
-          <strong>Poison</strong><br />
-          Poisons hit enemies for 5 seconds, ticking every 1 second for 20% of the initial hit damage.
-        </li>
-        <li>
-          <img class="icon-img icon-sm" src="icons/evolutions/vampire.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
-          <strong>Vampire</strong><br />
-          Reduces your damage dealt by 20%. 1.5% of the reduced damage is returned as health.
-        </li>
-        <li>
-          <img class="icon-img icon-sm" src="icons/evolutions/slow.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
-          <strong>Slow</strong><br />
-          Slows hit enemies for 1.5 seconds. The strength varies per skill (see table below).
-        </li>
-      </ul>
-
-      <div class="table-wrap">
-        <table class="data-table">
-          <caption>Slow Strength per Skill</caption>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Skill</th>
-              <th>Slow</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/fungal-blaster.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Fungal Blaster</td><td>40 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/thorns.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Thorns</td><td>35 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/spore-area.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Spores</td><td>30 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/boomerang.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Boomerang</td><td>40 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/pinecone-rain.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Pinecone Rain</td><td>40 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/plant-bombs.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Plant Bombs</td><td>50 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/slash.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Rotblade</td><td>30 %</td></tr>
-            <tr><td><img class="icon-img icon-sm" src="icons/skills/beam.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td><td>Hyphal Bridge</td><td>40 %</td></tr>
-          </tbody>
-        </table>
+    <h2>Effect Evolutions</h2>
+    <div class="artifact-grid">
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md" src="icons/skills/evolution-2-dot.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Evolutions:Evolution_2_DOT.title">Poison</span></h3>
+        <p><span data-i18n="Evolutions:Evolution_2_DOT.desc">Deals a portion of the damage to the enemy over time.</span></p>
       </div>
-
-      <h3>Tier 3 – Generic Stat Boost</h3>
-      <p>
-        Only effective if the selected skill has a matching Morph/Evolution
-        template for that stat.
-      </p>
-
-      <input
-        class="table-search"
-        type="search"
-        data-table-search="#evo3-table"
-        placeholder="Search stats…"
-      />
-
-      <div class="table-wrap">
-        <table class="data-table" id="evo3-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Stat</th>
-              <th>Effect</th>
-              <th>Valid for</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Damage</td>
-              <td>×1.30 (+30 %)</td>
-              <td>all skills with a matching evolution template</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Cooldown</td>
-              <td>×0.85 (−15 %)</td>
-              <td>Fungal Blaster, Thorns, Spores, Pinecone Rain (Skill 1/2/3/5)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/critical-chance.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Crit Chance</td>
-              <td>+5 percentage points</td>
-              <td>all skills</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/critical-damage.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Crit Damage</td>
-              <td>+20 percentage points</td>
-              <td>all skills</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Range</td>
-              <td>×1.20 (+20 %)</td>
-              <td>Fungal Blaster, Rotblade, Hyphal Bridge (Skill 1/7/8)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/angle.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Angle</td>
-              <td>×1.20 (+20 %)</td>
-              <td>Rotblade only (Skill 7)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/speed.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Speed</td>
-              <td>×1.20 (+20 %)</td>
-              <td>Boomerang only (Skill 4)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Target Count</td>
-              <td>+1</td>
-              <td>Thorns, Hyphal Bridge (Skill 2/8)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/object-count.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Object Count</td>
-              <td>+1</td>
-              <td>Boomerang, Plant Bombs, Rotblade (Skill 4/6/7)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/piercing.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Piercing</td>
-              <td>+1</td>
-              <td>Fungal Blaster only (Skill 1)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/cooldown.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Lifetime</td>
-              <td>×1.20 (+20 %)</td>
-              <td>Plant Bombs only (Skill 6)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Explosion Radius</td>
-              <td>×1.20 (+20 %)</td>
-              <td>Pinecone Rain, Plant Bombs (Skill 5/6)</td>
-            </tr>
-            <tr>
-              <td><img class="icon-img icon-sm" src="icons/perks/range.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"></td>
-              <td>Effect Radius</td>
-              <td>×1.20 (+20 %)</td>
-              <td>Spores only (Skill 3)</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md" src="icons/skills/evolution-2-slow.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Evolutions:Evolution_2_Slow.title">Spore Freeze</span></h3>
+        <p><span data-i18n="Evolutions:Evolution_2_Slow.desc">Apply Slow to enemies.</span></p>
+      </div>
+      <div class="artifact-card">
+        <h3><img class="icon-img icon-md" src="icons/skills/evolution-2-vampire.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Evolutions:Evolution_2_Vampire.title">Vampire</span></h3>
+        <p><span data-i18n="Evolutions:Evolution_2_Vampire.desc">Sacrifices 20% damage to convert a portion of it into healing.</span></p>
       </div>
     </div>
-
+    <h2>Stat Boost Evolutions</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Stat</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td>Angle</td><td><strong>×12000%</strong></td></tr>
+          <tr><td>Cooldown</td><td><strong>×8500%</strong></td></tr>
+          <tr><td>Critical Chance</td><td><strong>+5</strong></td></tr>
+          <tr><td>Critical Damage</td><td><strong>+20</strong></td></tr>
+          <tr><td>Damage</td><td><strong>×13000%</strong></td></tr>
+          <tr><td>Effect Radius</td><td><strong>×12000%</strong></td></tr>
+          <tr><td>Spawn Count</td><td><strong>+1</strong></td></tr>
+          <tr><td>Explosion Range</td><td><strong>×12000%</strong></td></tr>
+          <tr><td>Lifetime</td><td><strong>×12000%</strong></td></tr>
+          <tr><td>Piercing Amount</td><td><strong>+1</strong></td></tr>
+          <tr><td>Range</td><td><strong>×12000%</strong></td></tr>
+          <tr><td>Speed</td><td><strong>×12000%</strong></td></tr>
+          <tr><td>Target Amount</td><td><strong>+1</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
   </main>
-
   <site-footer class="site-footer"></site-footer>
 </body>
 </html>

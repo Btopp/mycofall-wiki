@@ -1,46 +1,37 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js"></script>
+  <script src="js/wiki-i18n.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body data-page="resources">
   <site-header class="site-header"></site-header>
-
   <main>
-    <h1>Resources</h1>
-    <p class="intro">
-      The currencies and pickups you collect during a run and spend on
-      upgrades.
-    </p>
-
+    <h1><span data-i18n="Codex:Resource.title">Resources</span></h1>
+    <p class="intro"><span data-i18n="Codex:Resource.desc">The currencies and pickups you collect during a run and spend on upgrades.</span></p>
     <div class="artifact-grid">
-
       <div class="artifact-card" id="mycelium">
-        <h3><img class="icon-img icon-md" src="icons/resources/mycelium.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Mycelium</h3>
-        <p>The primary in-run currency, earned by defeating enemies and from pickups. Spent in the shop on skill Morphs.</p>
+        <h3><img class="icon-img icon-md" src="icons/resources/mycelium.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Resources:Mycelium.title">Mycelium</span></h3>
+        <p><span data-i18n="Resources:Mycelium.desc">The primary in-run currency, earned by defeating enemies and from pickups. Spent in the shop on skill Morphs.</span></p>
       </div>
-
       <div class="artifact-card" id="biomass">
-        <h3><img class="icon-img icon-md" src="icons/resources/biomass.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Biomass</h3>
-        <p>A secondary in-run resource used for higher-cost Morph purchases. Dropped by enemies and spawned by the Biomass interactable event.</p>
+        <h3><img class="icon-img icon-md" src="icons/resources/biomass.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Resources:Biomass.title">Biomass</span></h3>
+        <p><span data-i18n="Resources:Biomass.desc">A secondary in-run resource used for higher-cost Morph purchases. Dropped by enemies and spawned by the Biomass interactable event.</span></p>
       </div>
-
       <div class="artifact-card" id="amber">
-        <h3><img class="icon-img icon-md" src="icons/resources/amber.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Amber</h3>
-        <p>A secondary in-run resource used for higher-cost Morph purchases. Spawned by the Amber interactable event and granted by some artifacts.</p>
+        <h3><img class="icon-img icon-md" src="icons/resources/amber.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Resources:Amber.title">Amber</span></h3>
+        <p><span data-i18n="Resources:Amber.desc">A secondary in-run resource used for higher-cost Morph purchases. Spawned by the Amber interactable event and granted by some artifacts.</span></p>
       </div>
-
-      <div class="artifact-card" id="meta-mycelium">
-        <h3><img class="icon-img icon-md" src="icons/resources/meta-mycelium.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Meta Mycelium</h3>
-        <p>A persistent currency collected from mushroom pickups during a run. Carries over between runs and is spent in the Hub to unlock new skills, maps, and characters.</p>
+      <div class="artifact-card" id="metamushroom">
+        <h3><img class="icon-img icon-md" src="icons/resources/meta-mushroom.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Resources:MetaMushroom.title">Meta Mycelium</span></h3>
+        <p><span data-i18n="Resources:MetaMushroom.desc">A persistent currency collected from mushroom pickups during a run. Carries over between runs and is spent in the Hub to unlock new skills, maps, and characters.</span></p>
       </div>
     </div>
   </main>
-
   <site-footer class="site-footer"></site-footer>
 </body>
 </html>

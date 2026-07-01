@@ -1,47 +1,41 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maps – Mycofall Wiki</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js"></script>
+  <script src="js/wiki-i18n.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body data-page="maps">
   <site-header class="site-header"></site-header>
-
   <main>
-    <h1>Maps</h1>
-    <p class="intro">
-      Mycofall currently features 3 maps, each with its own visual style and
-      atmosphere.
-    </p>
-
+    <h1><span data-i18n="Codex:Map.title">Maps</span></h1>
+    <p class="intro"><span data-i18n="Codex:Map.desc">The arenas where you fight. Each map has its own layout and challenges.</span></p>
     <div class="map-block">
       <div class="map-body">
-        <h2><img class="icon-img icon-portrait" src="icons/maps/tutorial-mood.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Tutorial</h2>
-        <p>Learn the game mechanics of the game.</p>
+        <h2><img class="icon-img icon-md" src="icons/maps/map-tutorial.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Maps:mapTutorial.title">Tutorial</span></h2>
+        <p><span data-i18n="Maps:mapTutorial.desc">Learn the game.</span></p>
+        <img class="map-overview" src="icons/map-images/map-tutorial.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
       </div>
-      <img class="map-overview" src="icons/maps/tutorial-map.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
     </div>
-
     <div class="map-block">
       <div class="map-body">
-        <h2><img class="icon-img icon-portrait" src="icons/maps/map-1-mood.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Dark Forest</h2>
-        <p>It's dark out there.</p>
+        <h2><img class="icon-img icon-md" src="icons/maps/map-dark-forest.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Maps:mapDarkForest.title">Dark Forest</span></h2>
+        <p><span data-i18n="Maps:mapDarkForest.desc">It's dark out there.</span></p>
+        <img class="map-overview" src="icons/map-images/map-dark-forest.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
       </div>
-      <img class="map-overview" src="icons/maps/map-1-map.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
     </div>
-
     <div class="map-block">
       <div class="map-body">
-        <h2><img class="icon-img icon-portrait" src="icons/maps/map-2-mood.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">Rugged Desert (WIP)</h2>
-        <p>What is that green stuff?</p>
+        <h2><img class="icon-img icon-md" src="icons/maps/map-rugged-desert.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'"> <span data-i18n="Maps:mapRuggedDesert.title">Rugged Desert</span></h2>
+        <p><span data-i18n="Maps:mapRuggedDesert.desc">What is that green stuff?
+(This map is still a work in progress!)</span></p>
+        <img class="map-overview" src="icons/map-images/map-rugged-desert.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
       </div>
-      <img class="map-overview" src="icons/maps/map-2-map.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='icons/placeholder.svg'">
     </div>
   </main>
-
   <site-footer class="site-footer"></site-footer>
 </body>
 </html>
