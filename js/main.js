@@ -13,7 +13,7 @@ class SiteHeader extends HTMLElement {
           <a href="interactables.html" data-page="interactables" data-i18n="Codex:Interactable.title">Interactables</a>
           <a href="enemies.html" data-page="enemies" data-i18n="Codex:Enemy.title">Enemies</a>
           <a href="maps.html" data-page="maps" data-i18n="Codex:Map.title">Maps</a>
-          <a href="achievements.html" data-page="achievements">Achievements</a>
+          <a href="achievements.html" data-page="achievements" data-i18n="Codex:Quest.title">Achievements</a>
         </nav>
         <div class="header-controls">
           <select id="wiki-lang" aria-label="Language">
