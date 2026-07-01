@@ -4,7 +4,7 @@ class SiteHeader extends HTMLElement {
       <div class="header-inner">
         <a href="index.html" class="site-title">🍄 Mycofall – Wiki</a>
         <nav class="main-nav">
-          <a href="game.html" data-page="game" class="wip" data-i18n="Codex:Mycofall.title">Game</a>
+          <a href="game.html" data-page="game" data-i18n="Codex:Mycofall.title">Game</a>
           <a href="characters.html" data-page="characters" data-i18n="Codex:Character.title">Characters</a>
           <a href="skills.html" data-page="skills" data-i18n="Codex:Skill.title">Skills</a>
           <a href="perks.html" data-page="perks" data-i18n="Codex:Perk.title">Perks</a>
@@ -23,7 +23,12 @@ class SiteHeader extends HTMLElement {
             <option value="es">ES</option>
             <option value="ru">RU</option>
             <option value="zh">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
             <option value="ja">JA</option>
+            <option value="ko">KO</option>
+            <option value="pl">PL</option>
+            <option value="pt-BR">PT-BR</option>
+            <option value="tr">TR</option>
           </select>
           <button id="wiki-theme" aria-label="Toggle dark mode">🌙</button>
         </div>
@@ -86,7 +91,7 @@ initTheme();
 
 // ─── i18n Language Switching ───
 
-const supportedLangs = ["en", "de", "fr", "es", "ru", "zh", "ja"];
+const supportedLangs = ["en", "de", "fr", "es", "ru", "zh", "ja", "zh-TW", "ko", "pl", "pt-BR", "tr"];
 
 let wikiI18nData = null;
 
