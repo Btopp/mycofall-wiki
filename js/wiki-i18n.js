@@ -435,7 +435,9 @@
     "UI:quitConfirmation.title": "Auf Wiedersehen",
     "UI:quitConfirmation.desc": "Danke fürs Spielen. :) Lass uns gerne Feedback da.",
     "UI:host": "Host",
-    "UI:join": "Host"
+    "UI:join": "Beitreten",
+    "UI:yourIP": "Deine IP",
+    "UI:enterIP": "Host-IP eingeben ..."
   },
   "fr": {
     "Codex:Mycofall.title": "Mycofall",
@@ -871,7 +873,11 @@
     "UI:firstTimePlayer.title": "Bienvenue, amateur de champignons !",
     "UI:firstTimePlayer.desc": "Avant de commencer, nous vous suggérons de terminer le court tutoriel dans votre première partie. Il vous guidera à travers toutes les mécaniques essentielles pour que vous soyez prêt à jouer comme un pro !",
     "UI:quitConfirmation.title": "Au revoir",
-    "UI:quitConfirmation.desc": "Merci d'avoir joué. :) N'hésite pas à nous laisser ton avis."
+    "UI:quitConfirmation.desc": "Merci d'avoir joué. :) N'hésite pas à nous laisser ton avis.",
+    "UI:host": "Hôte",
+    "UI:join": "Rejoindre",
+    "UI:yourIP": "Votre IP",
+    "UI:enterIP": "Entrez l'IP de l'hôte ..."
   },
   "es": {
     "Codex:Mycofall.title": "Mycofall",
@@ -1307,7 +1313,11 @@
     "UI:firstTimePlayer.title": "¡Bienvenido, amante de setas!",
     "UI:firstTimePlayer.desc": "Antes de empezar, te sugerimos que completes el breve tutorial en tu primera ronda. ¡Te guiará a través de todas las mecánicas principales para que estés listo para jugar como un profesional!",
     "UI:quitConfirmation.title": "Adiós",
-    "UI:quitConfirmation.desc": "Gracias por jugar. :) Comparte tu opinión con nosotros."
+    "UI:quitConfirmation.desc": "Gracias por jugar. :) Comparte tu opinión con nosotros.",
+    "UI:host": "Host",
+    "UI:join": "Unirse",
+    "UI:yourIP": "Tu IP",
+    "UI:enterIP": "Ingresa la IP del host ..."
   },
   "ru": {
     "Codex:Mycofall.title": "Mycofall",
@@ -1743,7 +1753,11 @@
     "UI:firstTimePlayer.title": "Добро пожаловать, любитель грибов!",
     "UI:firstTimePlayer.desc": "Прежде чем начать, мы рекомендуем вам пройти краткое обучение в первом раунде. Оно проведет вас через все основные механики, чтобы вы были готовы играть как профессионал!",
     "UI:quitConfirmation.title": "До свидания",
-    "UI:quitConfirmation.desc": "Спасибо за игру. :) Поделитесь с нами своим отзывом."
+    "UI:quitConfirmation.desc": "Спасибо за игру. :) Поделитесь с нами своим отзывом.",
+    "UI:host": "Хост",
+    "UI:join": "Присоединиться",
+    "UI:yourIP": "Ваш IP",
+    "UI:enterIP": "Введите IP хоста ..."
   },
   "zh": {
     "Codex:Mycofall.title": "Mycofall",
@@ -2179,7 +2193,11 @@
     "UI:firstTimePlayer.title": "欢迎，蘑菇爱好者！",
     "UI:firstTimePlayer.desc": "在你开始之前，我们建议你在第一局完成简短的教程。它会指导你了解所有核心机制，这样你就可以像专业人士一样玩了！",
     "UI:quitConfirmation.title": "再见",
-    "UI:quitConfirmation.desc": "感谢你的游戏。:) 请与我们分享你的反馈。"
+    "UI:quitConfirmation.desc": "感谢你的游戏。:) 请与我们分享你的反馈。",
+    "UI:host": "主机",
+    "UI:join": "加入",
+    "UI:yourIP": "你的IP",
+    "UI:enterIP": "输入主机IP ..."
   },
   "ja": {
     "Codex:Mycofall.title": "Mycofall",
@@ -2615,7 +2633,11 @@
     "UI:firstTimePlayer.title": "ようこそ、シュルーマー！",
     "UI:firstTimePlayer.desc": "始める前に、最初のラウンドで短いチュートリアルを完了することをお勧めします。すべてのコア メカニクスを説明し、プロのようにプレイできるようになります！",
     "UI:quitConfirmation.title": "さようなら",
-    "UI:quitConfirmation.desc": "プレイしてくれてありがとう。:) ぜひフィードバックをお聞かせください。"
+    "UI:quitConfirmation.desc": "プレイしてくれてありがとう。:) ぜひフィードバックをお聞かせください。",
+    "UI:host": "ホスト",
+    "UI:join": "参加",
+    "UI:yourIP": "あなたのIP",
+    "UI:enterIP": "ホストIPを入力してください ..."
   },
   "zh-TW": {
     "Codex:Mycofall.title": "Mycofall",
@@ -3051,7 +3073,11 @@
     "UI:firstTimePlayer.title": "歡迎，蘑菇愛好者！",
     "UI:firstTimePlayer.desc": "在你開始之前，我們建議你在第一局完成簡短的教程。它會指導你了解所有核心機制，這樣你就可以像專業人士一樣玩了！",
     "UI:quitConfirmation.title": "再見",
-    "UI:quitConfirmation.desc": "感謝你的遊戲。:) 請與我們分享你的反饋。"
+    "UI:quitConfirmation.desc": "感謝你的遊戲。:) 請與我們分享你的反饋。",
+    "UI:host": "主機",
+    "UI:join": "加入",
+    "UI:yourIP": "你的IP",
+    "UI:enterIP": "輸入主機IP ..."
   },
   "ko": {
     "Codex:Mycofall.title": "Mycofall",
@@ -3487,7 +3513,11 @@
     "UI:firstTimePlayer.title": "환영합니다, 버섯 애호가!",
     "UI:firstTimePlayer.desc": "시작하기 전에 첫 번째 라운드에서 짧은 튜토리얼을 완료하기를 권장합니다. 모든 핵심 메커니즘을 안내하므로 전문가처럼 플레이할 준비가 될 것입니다!",
     "UI:quitConfirmation.title": "안녕히 가세요",
-    "UI:quitConfirmation.desc": "플레이해주셔서 감사합니다. :) 피드백을 남겨주세요."
+    "UI:quitConfirmation.desc": "플레이해주셔서 감사합니다. :) 피드백을 남겨주세요.",
+    "UI:host": "호스트",
+    "UI:join": "참가",
+    "UI:yourIP": "당신의 IP",
+    "UI:enterIP": "호스트 IP 입력 ..."
   },
   "pl": {
     "Codex:Mycofall.title": "Mycofall",
@@ -3923,7 +3953,11 @@
     "UI:firstTimePlayer.title": "Witaj, miłośniku grzybów!",
     "UI:firstTimePlayer.desc": "Zanim zaczniesz, sugerujemy ukończenie krótkiego samouczka w pierwszej rundzie. Przeprowadzi cię przez wszystkie podstawowe mechaniki, abyś był gotów grać jak profesjonalista!",
     "UI:quitConfirmation.title": "Do widzenia",
-    "UI:quitConfirmation.desc": "Dzięki za grę. :) Chętnie usłyszymy twoją opinię."
+    "UI:quitConfirmation.desc": "Dzięki za grę. :) Chętnie usłyszymy twoją opinię.",
+    "UI:host": "Host",
+    "UI:join": "Dołącz",
+    "UI:yourIP": "Twój IP",
+    "UI:enterIP": "Wpisz IP hosta ..."
   },
   "pt-BR": {
     "Codex:Mycofall.title": "Mycofall",
@@ -4359,7 +4393,11 @@
     "UI:firstTimePlayer.title": "Bem-vindo, amante de cogumelos!",
     "UI:firstTimePlayer.desc": "Antes de começar, sugerimos que você complete o breve tutorial em sua primeira rodada. Ele o guiará por todas as mecânicas essenciais para que você esteja pronto para jogar como um profissional!",
     "UI:quitConfirmation.title": "Adeus",
-    "UI:quitConfirmation.desc": "Obrigado por jogar. :) Por favor, compartilhe seu feedback conosco."
+    "UI:quitConfirmation.desc": "Obrigado por jogar. :) Por favor, compartilhe seu feedback conosco.",
+    "UI:host": "Host",
+    "UI:join": "Entrar",
+    "UI:yourIP": "Seu IP",
+    "UI:enterIP": "Digite o IP do host ..."
   },
   "tr": {
     "Codex:Mycofall.title": "Mycofall",
@@ -4795,6 +4833,10 @@
     "UI:firstTimePlayer.title": "Hoş geldin, mantar sevgili!",
     "UI:firstTimePlayer.desc": "Başlamadan önce, ilk turda kısa eğitimi tamamlamanızı öneririz. Tüm temel mekanikleri size anlatacak ve profesyonel gibi oynamaya hazır olacaksınız!",
     "UI:quitConfirmation.title": "Hoşça kalın",
-    "UI:quitConfirmation.desc": "Oynadığın için teşekkürler. :) Lütfen bize geri bildirim gönder."
+    "UI:quitConfirmation.desc": "Oynadığın için teşekkürler. :) Lütfen bize geri bildirim gönder.",
+    "UI:host": "Host",
+    "UI:join": "Katıl",
+    "UI:yourIP": "Sizin IP",
+    "UI:enterIP": "Host IP'sini gir ..."
   }
 };
