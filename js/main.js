@@ -122,6 +122,18 @@ function detectSystemLanguage() {
   return "en";
 }
 
+// Fills {0}, {1}, … placeholders from data-i18n-args (a JSON array written by the generator).
+// Plain entries are values; {ref, en} entries point to another translation key, with an English fallback.
+function formatI18nArgs(text, argsJson, langData) {
+  let args;
+  try { args = JSON.parse(argsJson); } catch { return text; }
+  if (!Array.isArray(args)) return text;
+
+  const resolved = args.map((a) =>
+    a && typeof a === "object" ? (langData && langData[a.ref]) || a.en || "" : String(a));
+  return text.replace(/\{(\d+)\}/g, (m, i) => (i < resolved.length ? resolved[i] : m));
+}
+
 function switchLanguage(lang) {
   if (!wikiI18nData) wikiI18nData = loadI18nData();
 
@@ -139,7 +151,8 @@ function switchLanguage(lang) {
     }
 
     const langData = wikiI18nData && wikiI18nData[lang];
-    const translated = langData && langData[el.dataset.i18n];
+    let translated = langData && langData[el.dataset.i18n];
+    if (translated && el.dataset.i18nArgs) translated = formatI18nArgs(translated, el.dataset.i18nArgs, langData);
     if (translated) {
       if (useHtml) el.innerHTML = translated;
       else el.textContent = translated;
